@@ -9,7 +9,6 @@ public class Dialog : MonoBehaviour
     //[SerializeField] private int dialogoMostrar = 0;  //El dialogo que se mostrará, diferentes dialogos se referenciarán con diferentes números.
     //Para que el sprite cambie de color cuando el mouse se ponga encima.
 
-    [SerializeField] private GameObject dialogueMark;
     [SerializeField] private TMP_Text Texto;
     [SerializeField] private GameObject GloboTexto;
     [SerializeField, TextArea(4, 6)] private string[] LineasDialogo; //El 4 y el 6 es el espacio de las lineas.
@@ -19,45 +18,21 @@ public class Dialog : MonoBehaviour
 
     private float TiempoTapeo = 0.05f;
     private bool EmpezoDialogo;
+    public ControladorDialogos controlDial;
     private int lineIndex;
 
     
-    private void Dialogar(/*Para saber que dialogo mostrar.*/ int d ) 
-    {
-
-        globoTexto.SetActive(true);// Mostramos el globo de texto.
-
-
-    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        controlDial = FindObjectOfType<ControladorDialogos>();
     }
     //Para que el sprite cambie de color cuando el mouse se ponga encima.
     private void OnMouseDown()
     {
-        if (!EmpezoDialogo)
-        {
-            StartDialogue();
-        }
-        else if (Texto.text == LineasDialogo[lineIndex])
-        {
-            SiguienteLineaDialogo();
-        }
-        else//adelantar lineas de dialogo
-        {
-            StopAllCoroutines();
-            Texto.text = LineasDialogo[lineIndex];
-        }
-
-    }
-    // Update is called once per frame
-    void Update()
-    {/*
-        if(sr.color == hoverColor && Input.GetButtonDown("Fire1"))
-        {
+        if (!controlDial.DiAct() || EmpezoDialogo)
+        { 
             if (!EmpezoDialogo)
             {
                 StartDialogue();
@@ -71,13 +46,18 @@ public class Dialog : MonoBehaviour
                 StopAllCoroutines();
                 Texto.text = LineasDialogo[lineIndex];
             }
-            
-        }*/
+        }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     private void StartDialogue()
     {
         EmpezoDialogo = true;
+        controlDial.DiActChange(EmpezoDialogo);
         GloboTexto.SetActive(true);
         //dialogueMark.SetActive(false);
         lineIndex = 0;
@@ -95,6 +75,7 @@ public class Dialog : MonoBehaviour
         else
         {
             EmpezoDialogo = false;
+            controlDial.DiActChange(EmpezoDialogo);
             GloboTexto.SetActive(false);
             //dialogueMark.SetActive(true);
             Time.timeScale = 1f;
