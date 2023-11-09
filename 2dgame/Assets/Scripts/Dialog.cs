@@ -15,10 +15,6 @@ public class Dialog : MonoBehaviour
     [SerializeField, TextArea(4, 6)] private string[] LineasDialogo; //El 4 y el 6 es el espacio de las lineas.
 
 
-    [SerializeField] private SpriteRenderer sr;
-    [SerializeField] private Color hoverColor;
-    [SerializeField] private Color startColor;
-
     [SerializeField] private GameObject globoTexto;
 
     private float TiempoTapeo = 0.05f;
@@ -37,17 +33,9 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startColor = sr.color;
+        
     }
     //Para que el sprite cambie de color cuando el mouse se ponga encima.
-    private void OnMouseEnter()
-    {
-        sr.color = hoverColor;
-    }
-    private void OnMouseExit()
-    {
-        sr.color = startColor;
-    }
     private void OnMouseDown()
     {
         if (!EmpezoDialogo)
