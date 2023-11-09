@@ -775,7 +775,8 @@ MonoBehaviour:
   dialogueMark: {fileID: 0}
   Texto: {fileID: 1943098008}
   GloboTexto: {fileID: 703036937}
-  LineasDialogo: []
+  LineasDialogo:
+  - Boo
   sr: {fileID: 1099921137}
   hoverColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}

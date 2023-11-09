@@ -25,11 +25,7 @@ public class Dialog : MonoBehaviour
     private bool EmpezoDialogo;
     private int lineIndex;
 
-    /*private void OnMouseDown()
-    {
-        //Dialogar(dialogoMostrar);
-
-    }*/
+    
     private void Dialogar(/*Para saber que dialogo mostrar.*/ int d ) 
     {
 
@@ -52,10 +48,26 @@ public class Dialog : MonoBehaviour
     {
         sr.color = startColor;
     }
+    private void OnMouseDown()
+    {
+        if (!EmpezoDialogo)
+        {
+            StartDialogue();
+        }
+        else if (Texto.text == LineasDialogo[lineIndex])
+        {
+            SiguienteLineaDialogo();
+        }
+        else//adelantar lineas de dialogo
+        {
+            StopAllCoroutines();
+            Texto.text = LineasDialogo[lineIndex];
+        }
 
+    }
     // Update is called once per frame
     void Update()
-    {
+    {/*
         if(sr.color == hoverColor && Input.GetButtonDown("Fire1"))
         {
             if (!EmpezoDialogo)
@@ -72,7 +84,7 @@ public class Dialog : MonoBehaviour
                 Texto.text = LineasDialogo[lineIndex];
             }
             
-        }
+        }*/
     }
 
     private void StartDialogue()
