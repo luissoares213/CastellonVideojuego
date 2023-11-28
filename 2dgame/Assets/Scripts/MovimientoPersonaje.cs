@@ -42,7 +42,11 @@ public class MovimientoPersonaje : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
             // Verificar si el personaje ha llegado a la posición objetivo
+<<<<<<< Updated upstream
             if (Vector2.Distance(transform.position, targetPosition) < 10f)
+=======
+            if (Vector2.Distance(transform.position, targetPosition) < 5f)
+>>>>>>> Stashed changes
             {
                 isMoving = false;
                 animator.SetBool("Andar", false);

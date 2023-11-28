@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - ClickableObject
+<<<<<<< Updated upstream
+  - Enemigo
+  - Jugador
+=======
+  - Periodista
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
