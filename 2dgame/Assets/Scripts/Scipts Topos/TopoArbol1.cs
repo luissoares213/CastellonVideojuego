@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class TopoArbol1 : MonoBehaviour
 {
+    [Header("Graphics")]
+    [SerializeField] private Sprite mole;
+    [SerializeField] private Sprite moleHit;
 
+    private SpriteRenderer spriteRenderer;
 
     private Vector2 startPosition = new Vector2(-2.3f, 0f);
     private Vector2 endPosition = new Vector2(-3.8f, 0f);
@@ -12,6 +16,8 @@ public class TopoArbol1 : MonoBehaviour
     // How long it takes to show a mole.
     private float showDuration = 0.5f;
     private float duration = 1f;
+
+    private bool hittable = true;
 
 
     private IEnumerator ShowHide(Vector2 start, Vector2 end)
@@ -52,6 +58,34 @@ public class TopoArbol1 : MonoBehaviour
     }
 
 
+    private IEnumerator QuickHide()
+    {
+        yield return new WaitForSeconds(0.25f);
+
+        if(hittable != true)
+        {
+            Hide();
+        }
+        
+    }
+
+    public void Hide()
+    {
+        transform.localPosition = endPosition;
+    }
+
+    private void OnMouseDown()
+    {
+        spriteRenderer.sprite = moleHit;
+        StopAllCoroutines();
+        StartCoroutine(QuickHide());
+
+        hittable = false;
+    }
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     // Start is called before the first frame update
     void Start()
     {
