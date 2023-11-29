@@ -354,6 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mole: {fileID: 21300000, guid: 62e835fd51d65f347b5f573824dfe596, type: 3}
   moleHit: {fileID: 21300000, guid: d83f4aa3ed9ad5247b2e6abbebfcf83d, type: 3}
+  moleHardHat: {fileID: 21300000, guid: 507835709324d3043836baf71f203159, type: 3}
+  moleHatHit: {fileID: 21300000, guid: 68e32d511f6c73c4f86c03858e24890f, type: 3}
 --- !u!61 &571749363
 BoxCollider2D:
   m_ObjectHideFlags: 0

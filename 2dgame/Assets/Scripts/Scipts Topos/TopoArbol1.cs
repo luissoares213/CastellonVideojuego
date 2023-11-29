@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TopoArbol1 : MonoBehaviour
@@ -7,6 +8,8 @@ public class TopoArbol1 : MonoBehaviour
     [Header("Graphics")]
     [SerializeField] private Sprite mole;
     [SerializeField] private Sprite moleHit;
+    [SerializeField] private Sprite moleHardHat;
+    [SerializeField] private Sprite moleHatHit;
 
     private SpriteRenderer spriteRenderer;
 
@@ -18,6 +21,10 @@ public class TopoArbol1 : MonoBehaviour
     private float duration = 1f;
 
     private bool hittable = true;
+
+    public enum ChildType { Niño, Niña, Impostor};
+    private ChildType childType;
+    private float girlRate = 0.5f;
 
 
     private IEnumerator ShowHide(Vector2 start, Vector2 end)
@@ -74,14 +81,66 @@ public class TopoArbol1 : MonoBehaviour
         transform.localPosition = endPosition;
     }
 
+
+    void CreateNext()
+    {
+        float random = Random.Range(0f, 1f);
+
+        if(random < girlRate)
+        {
+            childType = ChildType.Niña;
+            spriteRenderer.sprite = moleHardHat;
+        }
+        else
+        {
+            childType = ChildType.Niño;
+            spriteRenderer.sprite = mole;
+        }
+
+        hittable = true;
+    }
+
     private void OnMouseDown()
     {
-        spriteRenderer.sprite = moleHit;
-        StopAllCoroutines();
-        StartCoroutine(QuickHide());
+        if (hittable)
+        {
+            switch (childType)
+            {
+                case ChildType.Niña:
+                    spriteRenderer.sprite = moleHatHit;
+                    // Stop the animation
+                    StopAllCoroutines();
+                    StartCoroutine(QuickHide());
 
-        hittable = false;
+                    hittable=false;
+
+                    break;
+                case ChildType.Niño:
+                    spriteRenderer.sprite = moleHit;
+
+                    StopAllCoroutines();
+                    StartCoroutine(QuickHide());
+
+                    hittable = false;
+
+                    break;
+                /*case ChildType.Impostor:
+                    spriteRenderer.sprite = moleHit;
+
+                    StopAllCoroutines();
+                    StartCoroutine(QuickHide());
+
+                    hittable = false;
+
+                    break;*/
+                default: break;
+
+
+            }
+        }
     }
+
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -89,6 +148,7 @@ public class TopoArbol1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CreateNext();
         StartCoroutine(ShowHide(startPosition, endPosition));
     }
 
