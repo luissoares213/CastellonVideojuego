@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d8ecd9fd925344c83f4d12995ab1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  velocidadMovimiento: 5
 --- !u!1 &298574201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,8 +2894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Periodista
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2613363260013326360, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+    - target: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+      propertyPath: m_TagString
+      value: Personaje
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

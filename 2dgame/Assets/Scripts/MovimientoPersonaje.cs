@@ -2,69 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoPersonaje : MonoBehaviour
+public class PointClick : MonoBehaviour
 {
-    public float speed = 15f; // Velocidad de movimiento del personaje
-    private bool isMoving = false; // Bandera para verificar si el personaje se está moviendo
-    private Vector2 targetPosition; // Posición objetivo del personaje
-    private Vector3 originalScale;
-    private Animator animator;
+    public float speed = 5.0f;
+    private float posY;
+    private float posX;
+    private Vector2 posicionInicial;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        originalScale = transform.localScale;
+        // Almacenar la posición inicial del personaje al inicio
+        posicionInicial = transform.position;
+        posY = posicionInicial.y; // Establecer la posición y inicial
+        posX = posicionInicial.x; //Establecer la posición x inicial
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Detectar el clic del mouse
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            if (hit.collider != null && hit.collider.CompareTag("ClickableObject"))
-            {
-                // Si se hace clic en un objeto con la etiqueta "ClickableObject"
-                targetPosition = new Vector2(hit.collider.transform.position.x, transform.position.y);
-                isMoving = true;
-                animator.SetBool("Andar", true);
-                // Girar el personaje según la dirección
-                FlipCharacter(targetPosition.x > transform.position.x);
-            }
+        if (Input.GetMouseButton(0))
+        {
+            posX = mousePos.x;
         }
 
-        if (isMoving)
-        {
-            // Mover el personaje solo en el eje X hacia la posición objetivo
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-
-            // Verificar si el personaje ha llegado a la posición objetivo
-//Updated upstream
-            if (Vector2.Distance(transform.position, targetPosition) < 10f)
-
-            if (Vector2.Distance(transform.position, targetPosition) < 5f)
-//Stashed changes
-            {
-                isMoving = false;
-                animator.SetBool("Andar", false);
-                
-            }
-        }     
+        MoverPersonaje(posX);
     }
-    // Método para girar el personaje
-    void FlipCharacter(bool isFacingRight)
+
+    void MoverPersonaje(float posicionX)
     {
-        if (isFacingRight)
-        {
-            transform.localScale = originalScale;
-        }
-        else
-        {
-            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
-        }
+        // Mover el personaje hacia la posición inicial en el eje y y la posición deseada en el eje x
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(posicionX, posY), Time.deltaTime * speed);
     }
 }
 
