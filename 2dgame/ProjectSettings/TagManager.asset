@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ClickableObject
   - Personaje
+  - Enemigo
+  - Jugador
+  - Key
   layers:
   - Default
   - TransparentFX
