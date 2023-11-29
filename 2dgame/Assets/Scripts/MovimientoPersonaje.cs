@@ -4,37 +4,68 @@ using UnityEngine;
 
 public class PointClick : MonoBehaviour
 {
-    public float speed = 5.0f;
-    private float posY;
-    private float posX;
-    private Vector2 posicionInicial;
+    public Transform objetivo; // El objeto al que el personaje se moverá
+    public float velocidadMovimiento = 5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Almacenar la posición inicial del personaje al inicio
-        posicionInicial = transform.position;
-        posY = posicionInicial.y; // Establecer la posición y inicial
-        posX = posicionInicial.x; //Establecer la posición x inicial
-    }
+    private bool estaEnMovimiento = false;
 
-    // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) && !estaEnMovimiento)
         {
-            posX = mousePos.x;
+            // Verificar si se hizo clic en el objetivo
+            if (ClicEnObjetivo())
+            {
+                // Iniciar el movimiento del personaje solo si se hizo clic en el objetivo
+                estaEnMovimiento = true;
+
+                // Girar hacia la dirección del clic si es necesario
+                GirarHaciaClic();
+            }
         }
 
-        MoverPersonaje(posX);
+        if (estaEnMovimiento)
+        {
+            MoverPersonaje();
+        }
     }
 
-    void MoverPersonaje(float posicionX)
+    void MoverPersonaje()
     {
-        // Mover el personaje hacia la posición inicial en el eje y y la posición deseada en el eje x
-        transform.position = Vector2.MoveTowards(transform.position, new Vector2(posicionX, posY), Time.deltaTime * speed);
+        // Calcular la dirección hacia el objetivo solo en el eje x
+        Vector3 direccion = new Vector3(objetivo.position.x - transform.position.x, 0, 0).normalized;
+
+        // Mover directamente hacia el objetivo
+        transform.position += direccion * velocidadMovimiento * Time.deltaTime;
+
+        // Verificar si ha alcanzado el objetivo
+        if (Mathf.Abs(transform.position.x - objetivo.position.x) < 4f)
+        {
+            // Detener el movimiento cuando alcanza el objetivo
+            estaEnMovimiento = false;
+        }
+    }
+
+    void GirarHaciaClic()
+    {
+        // Verificar si el clic ocurrió a la izquierda del personaje y está mirando hacia la derecha
+        if (Input.mousePosition.x < Camera.main.WorldToScreenPoint(transform.position).x && transform.localScale.x > 0)
+        {
+            // Girar el personaje hacia la izquierda
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+    }
+
+    bool ClicEnObjetivo()
+    {
+        // Verificar si el clic ocurrió dentro del área del collider del objetivo
+        Collider2D objetivoCollider = objetivo.GetComponent<Collider2D>();
+        if (objetivoCollider != null)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            return objetivoCollider.OverlapPoint(mousePos);
+        }
+        return false;
     }
 }
 
