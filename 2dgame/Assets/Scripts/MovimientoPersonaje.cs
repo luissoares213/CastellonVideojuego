@@ -8,6 +8,14 @@ public class PointClick : MonoBehaviour
     public float velocidadMovimiento = 5f;
 
     private bool estaEnMovimiento = false;
+    private Animator animator;
+
+
+    void Start()
+    {
+        // Obtener el componente Animator al inicio
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -21,12 +29,18 @@ public class PointClick : MonoBehaviour
 
                 // Girar hacia la dirección del clic si es necesario
                 GirarHaciaClic();
+                animator.SetBool("Andar", true);
             }
         }
 
         if (estaEnMovimiento)
         {
             MoverPersonaje();
+        }
+        else
+        {
+            // Cambiar el parámetro "EstaEnMovimiento" en el Animator a false
+            animator.SetBool("Andar", false);
         }
     }
 
@@ -43,6 +57,7 @@ public class PointClick : MonoBehaviour
         {
             // Detener el movimiento cuando alcanza el objetivo
             estaEnMovimiento = false;
+            animator.SetBool("Andar", false);
         }
     }
 
@@ -53,6 +68,12 @@ public class PointClick : MonoBehaviour
         {
             // Girar el personaje hacia la izquierda
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            animator.SetBool("GirarIzquierda", true);
+        }
+        else
+        {
+            // Cambiar el parámetro "GirarIzquierda" en el Animator a false
+            animator.SetBool("GirarIzquierda", false);
         }
     }
 

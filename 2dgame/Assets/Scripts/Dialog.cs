@@ -35,7 +35,7 @@ public class Dialog : MonoBehaviour
         { 
             if (!EmpezoDialogo)
             {
-                StartDialogue();
+                IniciarDialogo();
             }
             else if (Texto.text == LineasDialogo[lineIndex])
             {
@@ -54,7 +54,7 @@ public class Dialog : MonoBehaviour
         
     }
 
-    private void StartDialogue()
+    public void IniciarDialogo()
     {
         EmpezoDialogo = true;
         controlDial.DiActChange(EmpezoDialogo);
