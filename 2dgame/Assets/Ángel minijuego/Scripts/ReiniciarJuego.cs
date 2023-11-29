@@ -43,7 +43,7 @@ public class ReiniciarJuego : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (collision.gameObject.CompareTag("Enemigo")) // Ajusta la etiqueta según tu implementación
+        if (gameObject.CompareTag("Enemigo")) // Ajusta la etiqueta según tu implementación
         {
             MostrarBoton();
         }
