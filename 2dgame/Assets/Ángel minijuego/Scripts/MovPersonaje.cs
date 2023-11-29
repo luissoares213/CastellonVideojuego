@@ -10,6 +10,8 @@ public class MovPersonaje : MonoBehaviour
     private bool Suelo;
     private int Contador;
 
+    private Animator Animator;
+
 
     private Collider2D miCollider;
 
@@ -20,17 +22,19 @@ public class MovPersonaje : MonoBehaviour
         miCollider = GetComponent<Collider2D>();
 
         Contador = 0;
+
+        Animator = GetComponent<Animator>();
     }
 
 
     void Update()
     {
 
-
         //Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red);
         if (Physics2D.Raycast(transform.position, Vector3.down, 8f))
         {
             Suelo = true;
+            Animator.SetBool("Saltar", false);
         }
         else
         {
@@ -44,6 +48,7 @@ public class MovPersonaje : MonoBehaviour
                 Contador++;
                 Jump();
                 DesactivarColliderPorUnSegundo();
+                Animator.SetBool("Saltar", true);
             }
         }
 
@@ -54,6 +59,7 @@ public class MovPersonaje : MonoBehaviour
                 Contador--;
                 JumpDown();
                 DesactivarColliderPorUnSegundo();
+                Animator.SetBool("Saltar", true);
             }
         }
 

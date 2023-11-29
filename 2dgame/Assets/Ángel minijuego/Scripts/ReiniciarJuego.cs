@@ -43,10 +43,8 @@ public class ReiniciarJuego : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Verifica si el tiempo está detenido
-        if (Time.timeScale == 0f)
+        if (collision.gameObject.CompareTag("Enemigo")) // Ajusta la etiqueta según tu implementación
         {
-            // Si el tiempo está detenido, muestra el botón
             MostrarBoton();
         }
         else
