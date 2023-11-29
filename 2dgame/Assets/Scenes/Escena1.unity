@@ -2899,7 +2899,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Personaje
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 354080487536428915, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
