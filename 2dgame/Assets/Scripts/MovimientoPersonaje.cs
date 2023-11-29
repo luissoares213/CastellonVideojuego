@@ -2,69 +2,91 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoPersonaje : MonoBehaviour
+public class PointClick : MonoBehaviour
 {
-    public float speed = 15f; // Velocidad de movimiento del personaje
-    private bool isMoving = false; // Bandera para verificar si el personaje se está moviendo
-    private Vector2 targetPosition; // Posición objetivo del personaje
-    private Vector3 originalScale;
+    public Transform objetivo; // El objeto al que el personaje se moverá
+    public float velocidadMovimiento = 5f;
+
+    private bool estaEnMovimiento = false;
     private Animator animator;
 
-    // Start is called before the first frame update
+
     void Start()
     {
+        // Obtener el componente Animator al inicio
         animator = GetComponent<Animator>();
-        originalScale = transform.localScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !estaEnMovimiento)
         {
-            // Detectar el clic del mouse
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            if (hit.collider != null && hit.collider.CompareTag("ClickableObject"))
+            // Verificar si se hizo clic en el objetivo
+            if (ClicEnObjetivo())
             {
-                // Si se hace clic en un objeto con la etiqueta "ClickableObject"
-                targetPosition = new Vector2(hit.collider.transform.position.x, transform.position.y);
-                isMoving = true;
+                // Iniciar el movimiento del personaje solo si se hizo clic en el objetivo
+                estaEnMovimiento = true;
+
+                // Girar hacia la dirección del clic si es necesario
+                GirarHaciaClic();
                 animator.SetBool("Andar", true);
-                // Girar el personaje según la dirección
-                FlipCharacter(targetPosition.x > transform.position.x);
             }
         }
 
-        if (isMoving)
+        if (estaEnMovimiento)
         {
-            // Mover el personaje solo en el eje X hacia la posición objetivo
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-
-            // Verificar si el personaje ha llegado a la posición objetivo
-//Updated upstream
-            if (Vector2.Distance(transform.position, targetPosition) < 10f)
-
-            if (Vector2.Distance(transform.position, targetPosition) < 5f)
-//Stashed changes
-            {
-                isMoving = false;
-                animator.SetBool("Andar", false);
-                
-            }
-        }     
-    }
-    // Método para girar el personaje
-    void FlipCharacter(bool isFacingRight)
-    {
-        if (isFacingRight)
-        {
-            transform.localScale = originalScale;
+            MoverPersonaje();
         }
         else
         {
-            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+            // Cambiar el parámetro "EstaEnMovimiento" en el Animator a false
+            animator.SetBool("Andar", false);
         }
+    }
+
+    void MoverPersonaje()
+    {
+        // Calcular la dirección hacia el objetivo solo en el eje x
+        Vector3 direccion = new Vector3(objetivo.position.x - transform.position.x, 0, 0).normalized;
+
+        // Mover directamente hacia el objetivo
+        transform.position += direccion * velocidadMovimiento * Time.deltaTime;
+
+        // Verificar si ha alcanzado el objetivo
+        if (Mathf.Abs(transform.position.x - objetivo.position.x) < 4f)
+        {
+            // Detener el movimiento cuando alcanza el objetivo
+            estaEnMovimiento = false;
+            animator.SetBool("Andar", false);
+        }
+    }
+
+    void GirarHaciaClic()
+    {
+        // Verificar si el clic ocurrió a la izquierda del personaje y está mirando hacia la derecha
+        if (Input.mousePosition.x < Camera.main.WorldToScreenPoint(transform.position).x && transform.localScale.x > 0)
+        {
+            // Girar el personaje hacia la izquierda
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            animator.SetBool("GirarIzquierda", true);
+        }
+        else
+        {
+            // Cambiar el parámetro "GirarIzquierda" en el Animator a false
+            animator.SetBool("GirarIzquierda", false);
+        }
+    }
+
+    bool ClicEnObjetivo()
+    {
+        // Verificar si el clic ocurrió dentro del área del collider del objetivo
+        Collider2D objetivoCollider = objetivo.GetComponent<Collider2D>();
+        if (objetivoCollider != null)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            return objetivoCollider.OverlapPoint(mousePos);
+        }
+        return false;
     }
 }
 
