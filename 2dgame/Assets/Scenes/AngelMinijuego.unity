@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contadorText: {fileID: 91821712}
-  tiempoLimite: 3
+  tiempoLimite: 20
 --- !u!114 &91821712
 MonoBehaviour:
   m_ObjectHideFlags: 0

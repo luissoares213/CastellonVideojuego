@@ -12,7 +12,7 @@ public class Dialog : MonoBehaviour
     [SerializeField] private TMP_Text Texto;
     [SerializeField] private GameObject GloboTexto;
     [SerializeField, TextArea(4, 6)] private string[] LineasDialogo; //El 4 y el 6 es el espacio de las lineas.
-
+    [SerializeField] private GameObject plyr;
 
     [SerializeField] private GameObject globoTexto;
 
@@ -35,7 +35,7 @@ public class Dialog : MonoBehaviour
         { 
             if (!EmpezoDialogo)
             {
-                IniciarDialogo();
+                //IniciarDialogo();
             }
             else if (Texto.text == LineasDialogo[lineIndex])
             {
@@ -79,6 +79,7 @@ public class Dialog : MonoBehaviour
             GloboTexto.SetActive(false);
             //dialogueMark.SetActive(true);
             Time.timeScale = 1f;
+            plyr.GetComponent<MoveA>().Chbla(false);
         }
     }
 

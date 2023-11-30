@@ -9,9 +9,13 @@ public class MoveA : MonoBehaviour
     private Vector3 mov;
     private Animator animator;
     private bool talk;
+    private bool hablando;
+    private GameObject h;
+    private int Cont=0;
     // Start is called before the first frame update
     void Start()
     {
+        hablando = false;
         talk = false;
         dest = this.transform.position;
         mov = this.transform.position;
@@ -39,17 +43,31 @@ public class MoveA : MonoBehaviour
             animator.SetBool("Andar", false); 
             if (talk)
             {
+                h.GetComponent<Dialog>().IniciarDialogo();
+                hablando = true;
                 //Talking Code;
-                Debug.Log("talk");
-                talk = false; 
+                //Debug.Log("talk");
+
+                talk = false;
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, dest, speed * Time.deltaTime);
         mov = transform.position;
     }
-    public void moving(Vector3 a)
+    public void moving(Vector3 a, GameObject j)
     {
         dest = a;
-        talk = true;
+        if (hablando != true)
+        {
+            if (Cont == 0)
+                talk = true;
+            else if(Cont==1){ Cont = 0; }
+        }
+        h = j;
+    }
+    public void Chbla(bool b)
+    {
+        hablando = b;
+        Cont = 1;
     }
 }

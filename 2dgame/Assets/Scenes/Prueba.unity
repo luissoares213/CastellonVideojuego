@@ -408,6 +408,8 @@ GameObject:
   - component: {fileID: 732021558}
   - component: {fileID: 732021560}
   - component: {fileID: 732021561}
+  - component: {fileID: 732021562}
+  - component: {fileID: 732021563}
   m_Layer: 0
   m_Name: groc reposo
   m_TagString: Untagged
@@ -542,6 +544,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: {fileID: 1631027254}
   q: {fileID: 144255531}
+--- !u!114 &732021562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732021557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2668168636b63694ca1ef24d2b374b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Texto: {fileID: 0}
+  GloboTexto: {fileID: 0}
+  LineasDialogo:
+  - Hola
+  - Testeos
+  globoTexto: {fileID: 0}
+  controlDial: {fileID: 0}
+--- !u!114 &732021563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732021557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f3c8e4d3146d842bb4cfdf07b0b1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631027250
 GameObject:
   m_ObjectHideFlags: 0

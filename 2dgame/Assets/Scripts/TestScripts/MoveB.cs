@@ -18,6 +18,6 @@ public class MoveB : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        p.gameObject.GetComponent<MoveA>().moving(q.transform.position);
+        p.gameObject.GetComponent<MoveA>().moving(q.transform.position, this.gameObject);
     }
 }
