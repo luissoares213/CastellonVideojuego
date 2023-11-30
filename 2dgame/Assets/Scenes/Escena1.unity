@@ -555,13 +555,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208231748}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86d8ecd9fd925344c83f4d12995ab1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 1099921138}
   velocidadMovimiento: 5
+--- !u!114 &208231757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208231748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6acc7af7cc7709541a62673766d6f676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298574201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1878,7 @@ GameObject:
   - component: {fileID: 1099921136}
   - component: {fileID: 1099921139}
   - component: {fileID: 1099921140}
+  - component: {fileID: 1099921141}
   m_Layer: 0
   m_Name: groc reposo
   m_TagString: ClickableObject
@@ -1961,7 +1974,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6e9c393bd217a964e934fa45bd7ad32a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 11.593345, y: 24.81}
@@ -1982,7 +1995,8 @@ Transform:
   m_LocalPosition: {x: -17.49, y: -11.2, z: 0}
   m_LocalScale: {x: -0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1567833277}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1099921139
@@ -2004,6 +2018,7 @@ MonoBehaviour:
 
     Esto es una Prueba'
   - Oleee
+  plyr: {fileID: 208231748}
   globoTexto: {fileID: 703036937}
   controlDial: {fileID: 0}
 --- !u!114 &1099921140
@@ -2021,6 +2036,20 @@ MonoBehaviour:
   sr: {fileID: 1099921137}
   hoverColor: {r: 1, g: 0.923445, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1099921141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099921135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5beda7058a65a46a6d4255e2ee2a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 208231757}
+  q: {fileID: 1567833276}
 --- !u!1 &1385817520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2437,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1567833276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567833277}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567833277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567833276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.54, y: -7.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1099921138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1679697354
 GameObject:
@@ -2910,6 +2970,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 208231755}
+    - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 208231757}
   m_SourcePrefab: {fileID: 100100000, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
