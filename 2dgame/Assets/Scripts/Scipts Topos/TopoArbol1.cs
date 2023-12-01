@@ -24,8 +24,14 @@ public class TopoArbol1 : MonoBehaviour
 
     public enum ChildType { Niño, Niña, Impostor};
     private ChildType childType;
-    private float girlRate = 0.5f;
+    private float niñaRate = 0.5f;
 
+
+    private BoxCollider2D boxCollider2D;
+    private Vector2 boxOffset;
+    private Vector2 boxSize;
+    private Vector2 boxOffsetHidden;
+    private Vector2 boxSizeHidden;
 
     private IEnumerator ShowHide(Vector2 start, Vector2 end)
     {
@@ -38,6 +44,10 @@ public class TopoArbol1 : MonoBehaviour
         {
             transform.localPosition = Vector2.Lerp(start, end, elapsed / showDuration);
 
+            boxCollider2D.offset = Vector2.Lerp(boxOffsetHidden, boxOffset, elapsed / showDuration);
+
+            boxCollider2D.size = Vector2.Lerp(boxSizeHidden, boxSize, elapsed / showDuration);
+
             // Update at max framerate.
             elapsed += Time.deltaTime;
             yield return null;
@@ -45,6 +55,8 @@ public class TopoArbol1 : MonoBehaviour
 
         // Make sure we're exactly at the end.
         transform.localPosition = end;
+        boxCollider2D.offset = boxOffset;
+        boxCollider2D.size = boxSize;
 
         // Wait for duration to pass.
         yield return new WaitForSeconds(duration);
@@ -54,6 +66,9 @@ public class TopoArbol1 : MonoBehaviour
         while (elapsed < showDuration)
         {
             transform.localPosition = Vector2.Lerp(end, start, elapsed / showDuration);
+            boxCollider2D.offset = Vector2.Lerp(boxOffset, boxOffsetHidden, elapsed / showDuration);
+
+            boxCollider2D.size = Vector2.Lerp(boxSize, boxSizeHidden, elapsed / showDuration);
 
 
             // Update at max framerate.
@@ -79,6 +94,8 @@ public class TopoArbol1 : MonoBehaviour
     public void Hide()
     {
         transform.localPosition = endPosition;
+        boxCollider2D.offset = boxOffsetHidden;
+        boxCollider2D.size = boxSizeHidden;
     }
 
 
@@ -86,7 +103,7 @@ public class TopoArbol1 : MonoBehaviour
     {
         float random = Random.Range(0f, 1f);
 
-        if(random < girlRate)
+        if(random < niñaRate)
         {
             childType = ChildType.Niña;
             spriteRenderer.sprite = moleHardHat;
@@ -140,10 +157,25 @@ public class TopoArbol1 : MonoBehaviour
         }
     }
 
+    private void SetLevel(int level)
+    {
+        niñaRate = Mathf.Min(level * 0.03f, 1f);
 
+        float durationMin = Mathf.Clamp(1 - level * 0.1f, 0.01f, 1f);
+        float durationMax = Mathf.Clamp(2 - level * 0.1f, 0.01f, 2f);
+        duration = Random.Range(durationMin, durationMax);
+    }
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
+
+
+        // Work out collider values.
+        boxOffset = boxCollider2D.offset;
+        boxSize = boxCollider2D.size;
+        boxOffsetHidden = new Vector2(boxOffset.x, -startPosition.y / 2f);
+        boxSizeHidden = new Vector2(boxSize.x, 0f);
     }
     // Start is called before the first frame update
     void Start()
