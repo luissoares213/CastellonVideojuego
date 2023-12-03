@@ -3,7 +3,12 @@ guid: deacb562569df7440bba2afce0b6d58c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Pan1: {fileID: 2605973809437633195, guid: 8accf79b268ce8d44a90699c5b2306cd, type: 3}
+  - Pan2: {fileID: 8196580341993596541, guid: f7766db1907d32e47b6390d9693261e0, type: 3}
+  - Pan3: {fileID: 8721600184570786598, guid: 767aa2ae7c1b85147bc6e442b3518e31, type: 3}
+  - puntosText: {instanceID: 0}
+  - tiempoText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

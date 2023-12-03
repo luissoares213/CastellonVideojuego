@@ -9,11 +9,17 @@ TagManager:
   - Enemigo
   - Jugador
   - Key
+  - pan1
+  - pan2
+  - pan3
+  - bandeja1
+  - bandeja2
+  - bandeja3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - panes
   - Water
   - UI
   - 
