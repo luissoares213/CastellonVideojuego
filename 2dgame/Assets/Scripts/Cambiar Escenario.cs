@@ -7,13 +7,15 @@ public class ErmitaDia : MonoBehaviour
 {
 
     public Transform newCamPosition;
+    public SceneInfo sceneInfo;
 
     public void MoveCameraXY()
     {
         if (newCamPosition != null)
         {
             Vector3 newCamPositionXY = new Vector3(newCamPosition.position.x, newCamPosition.position.y, Camera.main.transform.position.z);
-            Camera.main.transform.position = newCamPositionXY;
+            //Camera.main.transform.position = newCamPositionXY;
+            sceneInfo.cameraPos = newCamPositionXY;
         }
     }
     
@@ -21,6 +23,10 @@ public class ErmitaDia : MonoBehaviour
     void Start()
     {
         
+
+    }
+    private void Awake()
+    {
     }
 
     // Update is called once per frame

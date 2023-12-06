@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena1.unity
     guid: d83c4812ec4d70d4dbf51bebf3cb41b9
+  - enabled: 1
+    path: Assets/Scenes/Alex Minijuego.unity
+    guid: 05e4e4155aa499c4993ef8ddcd665939
   m_configObjects: {}

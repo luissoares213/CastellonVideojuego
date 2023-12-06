@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
+    public SceneInfo sceneInfo;
     public void Jugar()
     {
+        sceneInfo.cameraPos = new Vector3(0, 0, -10);
+        sceneInfo.acto = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

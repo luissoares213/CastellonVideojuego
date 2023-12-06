@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 580981404187999306}
   - component: {fileID: 2613363260013326360}
   - component: {fileID: 7404725112165852991}
-  - component: {fileID: 354080487536428915}
+  - component: {fileID: 3135926536834545870}
+  - component: {fileID: 520391253377459931}
   m_Layer: 0
   m_Name: Periodista
-  m_TagString: Untagged
+  m_TagString: Personaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 7426245152933191166}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a580393368a04f448d6e4b6197a4255, type: 2}
+  m_Controller: {fileID: 9100000, guid: 117a0c245eaa1c34fa100a394d458f2e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -169,7 +170,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.675147, y: 18.888891}
   m_EdgeRadius: 0
---- !u!114 &354080487536428915
+--- !u!114 &3135926536834545870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,11 +179,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 7426245152933191166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2668168636b63694ca1ef24d2b374b15, type: 3}
+  m_Script: {fileID: 11500000, guid: 7220b683e4b364c4391e90605e9e2a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogoMostrar: 0
   sr: {fileID: 3073978716654464157}
-  hoverColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+  hoverColor: {r: 1, g: 0.923445, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  globoTexto: {fileID: 0}
+--- !u!114 &520391253377459931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7426245152933191166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6acc7af7cc7709541a62673766d6f676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
