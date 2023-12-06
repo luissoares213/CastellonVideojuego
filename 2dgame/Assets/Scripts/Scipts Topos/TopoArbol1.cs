@@ -6,15 +6,15 @@ using UnityEngine;
 public class TopoArbol1 : MonoBehaviour
 {
     [Header("Graphics")]
-    [SerializeField] private Sprite mole;
-    [SerializeField] private Sprite moleHit;
-    [SerializeField] private Sprite moleHardHat;
-    [SerializeField] private Sprite moleHatHit;
+    [SerializeField] private Sprite niño;
+    [SerializeField] private Sprite niñoHit;
+    [SerializeField] private Sprite niña;
+    [SerializeField] private Sprite niñaHit;
 
     private SpriteRenderer spriteRenderer;
 
-    private Vector2 startPosition = new Vector2(-2.3f, 0f);
-    private Vector2 endPosition = new Vector2(-3.8f, 0f);
+    private Vector2 startPosition = new Vector2(-2.55f, 0.08f);
+    private Vector2 endPosition = new Vector2(-3.99f, 0.08f);
 
     // How long it takes to show a mole.
     private float showDuration = 0.5f;
@@ -106,12 +106,12 @@ public class TopoArbol1 : MonoBehaviour
         if(random < niñaRate)
         {
             childType = ChildType.Niña;
-            spriteRenderer.sprite = moleHardHat;
+            spriteRenderer.sprite = niña;
         }
         else
         {
             childType = ChildType.Niño;
-            spriteRenderer.sprite = mole;
+            spriteRenderer.sprite = niño;
         }
 
         hittable = true;
@@ -124,7 +124,7 @@ public class TopoArbol1 : MonoBehaviour
             switch (childType)
             {
                 case ChildType.Niña:
-                    spriteRenderer.sprite = moleHatHit;
+                    spriteRenderer.sprite = niñaHit;
                     // Stop the animation
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
@@ -133,7 +133,7 @@ public class TopoArbol1 : MonoBehaviour
 
                     break;
                 case ChildType.Niño:
-                    spriteRenderer.sprite = moleHit;
+                    spriteRenderer.sprite = niñoHit;
 
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
@@ -178,7 +178,7 @@ public class TopoArbol1 : MonoBehaviour
         boxSizeHidden = new Vector2(boxSize.x, 0f);
     }
     // Start is called before the first frame update
-    void Start()
+    void Activate()
     {
         CreateNext();
         StartCoroutine(ShowHide(startPosition, endPosition));
