@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddScore(int moleIndex)
+    public void AddScore()
     {
         // Add and update score.
         score += 1;

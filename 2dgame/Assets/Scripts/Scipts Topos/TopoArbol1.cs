@@ -11,6 +11,9 @@ public class TopoArbol1 : MonoBehaviour
     [SerializeField] private Sprite niña;
     [SerializeField] private Sprite niñaHit;
 
+    [Header("GameManager")]
+    [SerializeField] private GameManager gameManager;
+
     private SpriteRenderer spriteRenderer;
 
     private Vector2 startPosition = new Vector2(-2.55f, 0.08f);
@@ -77,6 +80,10 @@ public class TopoArbol1 : MonoBehaviour
         }
         // Make sure we're exactly back at the start position.
         transform.localPosition = start;
+        if(hittable)
+        {
+            hittable = true;
+        }
     }
 
 
@@ -125,6 +132,7 @@ public class TopoArbol1 : MonoBehaviour
             {
                 case ChildType.Niña:
                     spriteRenderer.sprite = niñaHit;
+                    gameManager.AddScore();
                     // Stop the animation
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
@@ -134,7 +142,7 @@ public class TopoArbol1 : MonoBehaviour
                     break;
                 case ChildType.Niño:
                     spriteRenderer.sprite = niñoHit;
-
+                    gameManager.AddScore();
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
 
