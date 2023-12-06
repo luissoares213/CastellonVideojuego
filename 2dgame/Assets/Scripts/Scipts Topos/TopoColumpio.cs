@@ -5,8 +5,8 @@ using UnityEngine;
 public class TopoColumpio : MonoBehaviour
 {
 
-    private Vector2 startPosition = new Vector2(1.0841f, -0.095f);
-    private Vector2 endPosition = new Vector2(0.249f, -0.095f);
+    private Vector2 startPosition = new Vector2(1.099f, 0.236f);
+    private Vector2 endPosition = new Vector2(0.359f, 0.236f);
 
     // How long it takes to show a mole.
     private float showDuration = 0.5f;

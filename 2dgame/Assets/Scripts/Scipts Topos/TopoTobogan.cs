@@ -5,8 +5,8 @@ using UnityEngine;
 public class TopoTobogan : MonoBehaviour
 {
 
-    private Vector2 startPosition = new Vector2(-0.713f, -1.709f);
-    private Vector2 endPosition = new Vector2(-2.2f, -1.709f);
+    private Vector2 startPosition = new Vector2(-0.95f, -1.29f);
+    private Vector2 endPosition = new Vector2(-1.9f, -1.29f);
 
     // How long it takes to show a mole.
     private float showDuration = 0.5f;

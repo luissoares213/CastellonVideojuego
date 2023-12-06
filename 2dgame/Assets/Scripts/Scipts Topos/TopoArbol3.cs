@@ -5,8 +5,8 @@ using UnityEngine;
 public class TopoArbol3 : MonoBehaviour
 {
 
-    private Vector2 startPosition = new Vector2(4.7254f, -4.979f);
-    private Vector2 endPosition = new Vector2(6.563f, -4.979f);
+    private Vector2 startPosition = new Vector2(4.4012f, -4.742f);
+    private Vector2 endPosition = new Vector2(6.15f, -4.742f);
 
     // How long it takes to show a mole.
     private float showDuration = 0.5f;
