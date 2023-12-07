@@ -19,7 +19,7 @@ public class EnterM : MonoBehaviour
     {
         
     }
-    private void OnMouseDown()
+    private void EnterGame()
     {
         
         sceneInfo.acto = newActo;
