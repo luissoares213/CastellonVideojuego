@@ -6,15 +6,12 @@ using UnityEngine.SceneManagement;
 public class EnterM : MonoBehaviour
 {
     // Start is called before the first frame update
-    public SpriteRenderer l;
     private int csInd;
+    [SerializeField] private string Minijuego;
     public SceneInfo sceneInfo;
-    Color c = Color.red;
+    [SerializeField] private int newActo;
     void Start()
     {
-        if (sceneInfo.acto == 3) {
-            l.color = c;
-        }
     }
 
     // Update is called once per frame
@@ -25,9 +22,9 @@ public class EnterM : MonoBehaviour
     private void OnMouseDown()
     {
         
-        sceneInfo.acto = 2;
+        sceneInfo.acto = newActo;
         csInd = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("SavedScene", csInd);
-        SceneManager.LoadScene("Alex Minijuego");
+        SceneManager.LoadScene(Minijuego);
     }
 }
