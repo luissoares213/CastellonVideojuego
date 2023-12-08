@@ -16,8 +16,8 @@ public class TopoArbol1 : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    private Vector2 startPosition = new Vector2(-2.55f, 0.08f);
-    private Vector2 endPosition = new Vector2(-3.99f, 0.08f);
+    [SerializeField] private Vector2 startPosition;
+    [SerializeField] private Vector2 endPosition;
 
     // How long it takes to show a mole.
     private float showDuration = 0.5f;
@@ -28,6 +28,7 @@ public class TopoArbol1 : MonoBehaviour
     public enum ChildType { Niño, Niña, Impostor};
     private ChildType childType;
     private float niñaRate = 0.5f;
+    private int niñoIndex = 0;
 
 
     private BoxCollider2D boxCollider2D;
@@ -80,9 +81,13 @@ public class TopoArbol1 : MonoBehaviour
         }
         // Make sure we're exactly back at the start position.
         transform.localPosition = start;
-        if(hittable)
+        boxCollider2D.offset = boxOffsetHidden;
+        boxCollider2D.size = boxSizeHidden;
+        if (hittable)
         {
-            hittable = true;
+
+            hittable = false;
+            gameManager.Missed(niñoIndex, childType != ChildType.Impostor);
         }
     }
 
@@ -132,7 +137,7 @@ public class TopoArbol1 : MonoBehaviour
             {
                 case ChildType.Niña:
                     spriteRenderer.sprite = niñaHit;
-                    gameManager.AddScore();
+                    gameManager.AddScore(niñoIndex);
                     // Stop the animation
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
@@ -142,7 +147,7 @@ public class TopoArbol1 : MonoBehaviour
                     break;
                 case ChildType.Niño:
                     spriteRenderer.sprite = niñoHit;
-                    gameManager.AddScore();
+                    gameManager.AddScore(niñoIndex);
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
 
@@ -186,10 +191,22 @@ public class TopoArbol1 : MonoBehaviour
         boxSizeHidden = new Vector2(boxSize.x, 0f);
     }
     // Start is called before the first frame update
-    void Activate()
+    public void Activate()
     {
+        //SetLevel(level);
         CreateNext();
         StartCoroutine(ShowHide(startPosition, endPosition));
+    }
+
+    public void SetIndex(int index)
+    {
+        niñoIndex = index;
+    }
+
+    public void StopGame()
+    {
+        hittable = false;
+        StopAllCoroutines();
     }
 
     // Update is called once per frame

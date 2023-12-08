@@ -263,9 +263,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 56777715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d08cdc002d6e644fbc42dee4a528b51, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dbb498d150d644b91670e3d51bfd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "ni\xF1o": {fileID: 21300000, guid: d3b610f3f388dbd42a07d05007f36620, type: 3}
+  "ni\xF1oHit": {fileID: 21300000, guid: 264e906b686dc074c99993baeb6d1ef8, type: 3}
+  "ni\xF1a": {fileID: 21300000, guid: d9248ab1bfca68246860a7a20e22f497, type: 3}
+  "ni\xF1aHit": {fileID: 21300000, guid: 206c48eb0ee870849a89cb59c7b8d231, type: 3}
+  gameManager: {fileID: 780447766}
+  startPosition: {x: 3.835, y: -4.001}
+  endPosition: {x: 6, y: -4.001}
 --- !u!1 &378863381
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 999
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -417,7 +424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &471111763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -776,9 +783,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 642371462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7660b63c8d87c464f83fba003ed1f3cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dbb498d150d644b91670e3d51bfd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "ni\xF1o": {fileID: 21300000, guid: d3b610f3f388dbd42a07d05007f36620, type: 3}
+  "ni\xF1oHit": {fileID: 21300000, guid: 264e906b686dc074c99993baeb6d1ef8, type: 3}
+  "ni\xF1a": {fileID: 21300000, guid: d9248ab1bfca68246860a7a20e22f497, type: 3}
+  "ni\xF1aHit": {fileID: 21300000, guid: 206c48eb0ee870849a89cb59c7b8d231, type: 3}
+  gameManager: {fileID: 780447766}
+  startPosition: {x: 1.099, y: 0.236}
+  endPosition: {x: 0, y: 0.236}
 --- !u!1 &662486710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213, y: -27.5}
+  m_AnchoredPosition: {x: -236, y: 161.3}
   m_SizeDelta: {x: 330, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &777693224
@@ -1129,11 +1143,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fd4e2c44fac6e4b9dc4e62f0c62a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "ni\xF1os":
+  - {fileID: 2140705016}
+  - {fileID: 1642484166}
+  - {fileID: 1719093339}
+  - {fileID: 56777719}
+  - {fileID: 642371466}
   playButton: {fileID: 845917224}
   gameUI: {fileID: 749712496}
   outOfTimeText: {fileID: 471111762}
   impostorText: {fileID: 1676300074}
-  timeText: {fileID: 1379364401}
+  timeText: {fileID: 1653842529}
   scoreText: {fileID: 378863382}
 --- !u!4 &780447767
 Transform:
@@ -2450,9 +2470,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1642484162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10f33453df085843a107518f0976629, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dbb498d150d644b91670e3d51bfd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "ni\xF1o": {fileID: 21300000, guid: d3b610f3f388dbd42a07d05007f36620, type: 3}
+  "ni\xF1oHit": {fileID: 21300000, guid: 264e906b686dc074c99993baeb6d1ef8, type: 3}
+  "ni\xF1a": {fileID: 21300000, guid: d9248ab1bfca68246860a7a20e22f497, type: 3}
+  "ni\xF1aHit": {fileID: 21300000, guid: 206c48eb0ee870849a89cb59c7b8d231, type: 3}
+  gameManager: {fileID: 780447766}
+  startPosition: {x: 0.06, y: -3.03}
+  endPosition: {x: 0.06, y: -4.64}
 --- !u!1 &1653842527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,7 +2631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1676300075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2863,9 +2890,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1719093335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c645987c17f533742a99c09ae91bb48a, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dbb498d150d644b91670e3d51bfd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "ni\xF1o": {fileID: 21300000, guid: d3b610f3f388dbd42a07d05007f36620, type: 3}
+  "ni\xF1oHit": {fileID: 21300000, guid: 264e906b686dc074c99993baeb6d1ef8, type: 3}
+  "ni\xF1a": {fileID: 21300000, guid: d9248ab1bfca68246860a7a20e22f497, type: 3}
+  "ni\xF1aHit": {fileID: 21300000, guid: 206c48eb0ee870849a89cb59c7b8d231, type: 3}
+  gameManager: {fileID: 780447766}
+  startPosition: {x: -0.95, y: -1.29}
+  endPosition: {x: -1.95, y: -1.29}
 --- !u!1 &1823059073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,6 +3369,8 @@ MonoBehaviour:
   "ni\xF1a": {fileID: 21300000, guid: d9248ab1bfca68246860a7a20e22f497, type: 3}
   "ni\xF1aHit": {fileID: 21300000, guid: 206c48eb0ee870849a89cb59c7b8d231, type: 3}
   gameManager: {fileID: 780447766}
+  startPosition: {x: -2.55, y: 0.08}
+  endPosition: {x: -3.99, y: 0.08}
 --- !u!212 &2140705017
 SpriteRenderer:
   m_ObjectHideFlags: 0

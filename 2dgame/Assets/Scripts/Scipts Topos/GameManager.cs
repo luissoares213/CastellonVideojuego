@@ -4,6 +4,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
+    [SerializeField] private List<TopoArbol1> niños;
+
     [Header("UI objects")]
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject gameUI;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
     private float timeRemaining;
     private int score;
     private bool playing = false;
+    private HashSet<TopoArbol1> currentNiños = new HashSet<TopoArbol1>();
 
     // This is public so the play button can see it.
     public void StartGame()
@@ -28,6 +31,15 @@ public class GameManager : MonoBehaviour
         outOfTimeText.SetActive(false);
         impostorText.SetActive(false);
         gameUI.SetActive(true);
+
+        for (int i = 0; i < niños.Count; i++)
+        {
+            niños[i].Hide();
+            niños[i].SetIndex(i);
+        }
+
+        // Remove any old game state.
+        currentNiños.Clear();
 
         // Start with 30 seconds.
         timeRemaining = startingTime;
@@ -48,6 +60,10 @@ public class GameManager : MonoBehaviour
             impostorText.SetActive(true);
         }
         // Hide all moles.
+        foreach (TopoArbol1 niño in niños)
+        {
+            niño.StopGame();
+        }
         // Stop the game and show the start UI.
         playing = false;
         playButton.SetActive(true);
@@ -67,15 +83,33 @@ public class GameManager : MonoBehaviour
             }
             timeText.text = $"{(int)timeRemaining / 60}:{(int)timeRemaining % 60:D2}";
             // Check if we need to start any more moles.
+            if (currentNiños.Count <= (3))
+            {
+                // Choose a random mole.
+                int index = Random.Range(0, niños.Count);
+                // Doesn't matter if it's already doing something, we'll just try again next frame.
+                if (!currentNiños.Contains(niños[index]))
+                {
+                    currentNiños.Add(niños[index]);
+                    niños[index].Activate();
+                }
+            }
         }
     }
 
-    public void AddScore()
+    public void AddScore(int niñoIndex)
     {
         // Add and update score.
         score += 1;
         scoreText.text = $"{score}";
         // Increase time by a little bit.
-        timeRemaining += 1;
+
+        currentNiños.Remove(niños[niñoIndex]);
+    }
+
+    public void Missed(int moleIndex, bool isMole)
+    {
+        // Remove from active moles.
+        currentNiños.Remove(niños[moleIndex]);
     }
 }
