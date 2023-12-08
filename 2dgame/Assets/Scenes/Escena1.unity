@@ -1846,6 +1846,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963235388}
   m_CullTransparentMesh: 1
+--- !u!1 &1036577725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036577727}
+  - component: {fileID: 1036577726}
+  m_Layer: 0
+  m_Name: NPC_Controler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1036577726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036577725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ba1f735844a8947a84341820878dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
+  NPC: []
+--- !u!4 &1036577727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036577725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.53122, y: 0.26671362, z: -0.3768807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099921135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p: {fileID: 208231757}
   q: {fileID: 1567833276}
+  actoActivo: 0
+  npc: {fileID: 1036577726}
 --- !u!1 &1385817520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,8 +2663,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae06e140d917934fb104cdf030be5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  l: {fileID: 1692113781}
+  Minijuego: Alex Minijuego
   sceneInfo: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
+  newActo: 2
 --- !u!61 &1692113780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3077,3 +3126,4 @@ SceneRoots:
   - {fileID: 906161589}
   - {fileID: 360883110}
   - {fileID: 1692113782}
+  - {fileID: 1036577727}
