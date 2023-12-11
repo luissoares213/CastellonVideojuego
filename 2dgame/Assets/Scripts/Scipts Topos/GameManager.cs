@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             }
             timeText.text = $"{(int)timeRemaining / 60}:{(int)timeRemaining % 60:D2}";
             // Check if we need to start any more moles.
-            if (currentNiños.Count <= (3))
+            if (currentNiños.Count <= (1))
             {
                 // Choose a random mole.
                 int index = Random.Range(0, niños.Count);
@@ -99,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int niñoIndex)
     {
+
         // Add and update score.
         score += 1;
         scoreText.text = $"{score}";

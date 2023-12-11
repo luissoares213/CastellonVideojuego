@@ -10,6 +10,7 @@ public class TopoArbol1 : MonoBehaviour
     [SerializeField] private Sprite niñoHit;
     [SerializeField] private Sprite niña;
     [SerializeField] private Sprite niñaHit;
+    [SerializeField] private Sprite impostor;
 
     [Header("GameManager")]
     [SerializeField] private GameManager gameManager;
@@ -27,7 +28,8 @@ public class TopoArbol1 : MonoBehaviour
 
     public enum ChildType { Niño, Niña, Impostor};
     private ChildType childType;
-    private float niñaRate = 0.5f;
+    private float niñaRate = 0.3f;
+    private float impostorRate = 0.2f;
     private int niñoIndex = 0;
 
 
@@ -70,6 +72,7 @@ public class TopoArbol1 : MonoBehaviour
         while (elapsed < showDuration)
         {
             transform.localPosition = Vector2.Lerp(end, start, elapsed / showDuration);
+
             boxCollider2D.offset = Vector2.Lerp(boxOffset, boxOffsetHidden, elapsed / showDuration);
 
             boxCollider2D.size = Vector2.Lerp(boxSize, boxSizeHidden, elapsed / showDuration);
@@ -96,7 +99,7 @@ public class TopoArbol1 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
 
-        if(hittable != true)
+        if(!hittable)
         {
             Hide();
         }
@@ -105,7 +108,7 @@ public class TopoArbol1 : MonoBehaviour
 
     public void Hide()
     {
-        transform.localPosition = endPosition;
+        transform.localPosition = startPosition;
         boxCollider2D.offset = boxOffsetHidden;
         boxCollider2D.size = boxSizeHidden;
     }
@@ -115,16 +118,27 @@ public class TopoArbol1 : MonoBehaviour
     {
         float random = Random.Range(0f, 1f);
 
-        if(random < niñaRate)
+        if(random < impostorRate)
         {
-            childType = ChildType.Niña;
-            spriteRenderer.sprite = niña;
+            childType = ChildType.Impostor;
+            spriteRenderer.sprite = impostor;
         }
-        else
+        
+        else 
         {
-            childType = ChildType.Niño;
-            spriteRenderer.sprite = niño;
+            random = Random.Range(0f, 1f);
+            if (random < niñaRate)
+            {
+                childType = ChildType.Niña;
+                spriteRenderer.sprite = niña;
+            }
+            else
+            {
+                childType = ChildType.Niño;
+                spriteRenderer.sprite = niño;
+            }    
         }
+        
 
         hittable = true;
     }
@@ -154,15 +168,15 @@ public class TopoArbol1 : MonoBehaviour
                     hittable = false;
 
                     break;
-                /*case ChildType.Impostor:
-                    spriteRenderer.sprite = moleHit;
+                case ChildType.Impostor:
 
-                    StopAllCoroutines();
-                    StartCoroutine(QuickHide());
+                    gameManager.GameOver(1);
+
 
                     hittable = false;
 
-                    break;*/
+                    break;
+
                 default: break;
 
 
