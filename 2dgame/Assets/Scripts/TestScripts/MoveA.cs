@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveA : MonoBehaviour
 {
     private float speed = 5f;
-    private Vector3 dest;
+    public Vector3 dest;
     private Vector3 mov;
     private Animator animator;
     private bool talk;
