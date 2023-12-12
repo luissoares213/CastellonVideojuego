@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovPersonaje : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class MovPersonaje : MonoBehaviour
     private Rigidbody2D Rigidbody2D;
     private bool Suelo;
     private int Contador;
+
+    public GameObject botonReiniciar;
 
     private Animator Animator;
 
@@ -24,6 +27,8 @@ public class MovPersonaje : MonoBehaviour
         Contador = 0;
 
         Animator = GetComponent<Animator>();
+
+        botonReiniciar.SetActive(false);
     }
 
 
@@ -75,9 +80,34 @@ public class MovPersonaje : MonoBehaviour
             // Detener el tiempo
             Time.timeScale = 0f;
 
+            // El personaje chocó con un obstáculo
+            MostrarBotonReiniciar();
+
             // Puedes agregar aquí cualquier otra lógica que desees ejecutar cuando ocurra la colisión con el personaje
             Debug.Log("¡Colisión con el personaje detectada! Tiempo detenido.");
         }
+    }
+
+
+    private void MostrarBotonReiniciar()
+    {
+        // Asegurarse de que el botónReiniciar no sea nulo
+        if (botonReiniciar != null)
+        {
+            // Activar el botónReiniciar
+            botonReiniciar.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("La referencia al botón de reinicio no está asignada en el Inspector.");
+        }
+    }
+
+    public void ReiniciarPartida()
+    {
+        // Reiniciar la escena actual
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
     }
 
     void DesactivarColliderPorUnSegundo()

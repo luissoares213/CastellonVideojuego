@@ -6,28 +6,26 @@ using UnityEngine.UI;
 public class Contador : MonoBehaviour
 {
     public Text contadorText;
-    public float tiempoLimite = 60f; // Establece el tiempo límite en segundos
+    public float tiempoLimite = 60f;
     private float tiempoRestante;
+    public SiguienteEscena scriptBoton;  // Agrega una referencia a tu script del botón aquí
 
     void Start()
     {
         tiempoRestante = tiempoLimite;
+        scriptBoton = FindObjectOfType<SiguienteEscena>();  // Encuentra automáticamente el script del botón
     }
 
     void Update()
     {
-        // Actualiza el contador
         tiempoRestante -= Time.deltaTime;
-
-        // Actualiza el texto del contador
         contadorText.text = "Tiempo: " + Mathf.Round(tiempoRestante).ToString();
 
-        // Puedes agregar lógica adicional aquí, como manejar eventos cuando el contador llega a cero
         if (tiempoRestante <= 0f)
         {
             Debug.Log("¡Tiempo agotado!");
-            // Aquí puedes agregar código para manejar el evento cuando el tiempo llega a cero
             Time.timeScale = 0f;
+            scriptBoton.boton.gameObject.SetActive(true);  // Activa el botón cuando el tiempo llega a cero
         }
     }
 }
