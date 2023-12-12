@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class EnterM : MonoBehaviour
 {
-    // Start is called before the first frame update
     private int csInd;
     [SerializeField] private string Minijuego;
     public SceneInfo sceneInfo;
