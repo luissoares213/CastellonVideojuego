@@ -80,6 +80,10 @@ public class Dialog : MonoBehaviour
             //dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             plyr.GetComponent<MoveA>().Chbla(false);
+            if (GetComponent<EnterM>()) 
+            {
+                GetComponent<EnterM>().EnterGame();
+            }
         }
     }
 

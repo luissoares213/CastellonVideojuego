@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveA : MonoBehaviour
 {
     private float speed = 5f;
+    public SceneInfo sceneInfo;
     public Vector3 dest;
     private Vector3 mov;
     private Animator animator;
@@ -17,8 +18,9 @@ public class MoveA : MonoBehaviour
     {
         hablando = false;
         talk = false;
-        dest = this.transform.position;
-        mov = this.transform.position;
+        dest = sceneInfo.periDest;
+        mov = sceneInfo.periMov;
+        this.transform.position = dest;
         animator = GetComponent<Animator>();
     }
 
@@ -53,6 +55,8 @@ public class MoveA : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, dest, speed * Time.deltaTime);
         mov = transform.position;
+        sceneInfo.periDest = dest ;
+        sceneInfo.periMov= mov;
     }
     public void moving(Vector3 a, GameObject j)
     {

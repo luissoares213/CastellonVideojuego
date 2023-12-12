@@ -8,7 +8,6 @@ public class EnterM : MonoBehaviour
     private int csInd;
     [SerializeField] private string Minijuego;
     public SceneInfo sceneInfo;
-    [SerializeField] private int newActo;
     void Start()
     {
     }
@@ -18,10 +17,9 @@ public class EnterM : MonoBehaviour
     {
         
     }
-    private void EnterGame()
+    public void EnterGame()
     {
         
-        sceneInfo.acto = newActo;
         csInd = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("SavedScene", csInd);
         SceneManager.LoadScene(Minijuego);

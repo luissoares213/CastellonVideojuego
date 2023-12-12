@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MoveB : MonoBehaviour
 {
-    public MoveA p; //Personaje que se mueve (Ha de tener el script MoveA)
-    public GameObject q; //Destino del personaje que se mueve
+    public MoveA personajeMovible; //Personaje que se mueve (Ha de tener el script MoveA)
+    public GameObject destino; //Destino del personaje que se mueve
     public int actoActivo;
     [SerializeField] private Npc_Controler npc;
 
@@ -23,6 +23,6 @@ public class MoveB : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        p.gameObject.GetComponent<MoveA>().moving(q.transform.position, this.gameObject);
+        personajeMovible.gameObject.GetComponent<MoveA>().moving(destino.transform.position, this.gameObject);
     }
 }
