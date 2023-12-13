@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MovPersonaje : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class MovPersonaje : MonoBehaviour
     public GameObject botonReiniciar;
 
     private Animator Animator;
+
+    public Button botonSalto;
+    public Button botonSaltoBajo;
 
 
     private Collider2D miCollider;
@@ -29,6 +33,18 @@ public class MovPersonaje : MonoBehaviour
         Animator = GetComponent<Animator>();
 
         botonReiniciar.SetActive(false);
+
+
+        if (botonSalto != null)
+        {
+            botonSalto.onClick.AddListener(BotonSaltoClick);
+        }
+
+        if (botonSaltoBajo != null)
+        {
+            botonSaltoBajo.onClick.AddListener(BotonSaltoAbajo);
+        }
+
     }
 
 
@@ -46,9 +62,13 @@ public class MovPersonaje : MonoBehaviour
             Suelo = false;
         }
 
+    }
+    public void BotonSaltoClick()
+    {
         if (Contador < 1)
         {
-            if (Input.GetKeyDown(KeyCode.W) && Suelo)
+            // Verifica si el jugador está en el suelo antes de realizar el salto
+            if (Suelo)
             {
                 Contador++;
                 Jump();
@@ -56,10 +76,15 @@ public class MovPersonaje : MonoBehaviour
                 Animator.SetBool("Saltar", true);
             }
         }
+            
+    }
 
+    public void BotonSaltoAbajo()
+    {
         if (Contador > -1)
         {
-            if (Input.GetKeyDown(KeyCode.S) && Suelo)
+            // Verifica si el jugador está en el suelo antes de realizar el salto
+            if (Suelo)
             {
                 Contador--;
                 JumpDown();
@@ -67,8 +92,6 @@ public class MovPersonaje : MonoBehaviour
                 Animator.SetBool("Saltar", true);
             }
         }
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
