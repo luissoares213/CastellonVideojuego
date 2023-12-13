@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TopoArbol1 : MonoBehaviour
 {
@@ -151,7 +152,7 @@ public class TopoArbol1 : MonoBehaviour
             {
                 case ChildType.Niña:
                     spriteRenderer.sprite = niñaHit;
-                    gameManager.AddScore(niñoIndex);
+                    gameManager.RemoveSCORE(niñoIndex);
                     // Stop the animation
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
@@ -222,6 +223,8 @@ public class TopoArbol1 : MonoBehaviour
         hittable = false;
         StopAllCoroutines();
     }
+
+   
 
     // Update is called once per frame
     void Update()

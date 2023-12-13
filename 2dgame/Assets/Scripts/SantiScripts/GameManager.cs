@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     private float timeRemaining;
     private int score;
     private bool playing = false;
+    public bool isAWin;
     private HashSet<TopoArbol1> currentNiños = new HashSet<TopoArbol1>();
 
     // This is public so the play button can see it.
@@ -106,6 +107,27 @@ public class GameManager : MonoBehaviour
         // Increase time by a little bit.
 
         currentNiños.Remove(niños[niñoIndex]);
+    }
+
+    public void RemoveSCORE(int niñoIndex)
+    {
+        score -= 2;
+        scoreText.text = $"{score}";
+        // Increase time by a little bit.
+
+        currentNiños.Remove(niños[niñoIndex]);
+    }
+
+    public void itsAWin()
+    {
+        if (score >= 20)
+        {
+            isAWin = true;
+        }
+        else
+        {
+            isAWin = false;
+        }
     }
 
     public void Missed(int moleIndex, bool isMole)
