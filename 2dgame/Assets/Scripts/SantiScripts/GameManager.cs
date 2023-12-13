@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     private int score;
     private bool playing = false;
     public bool isAWin;
+    public bool getObject;
     private HashSet<TopoArbol1> currentNiños = new HashSet<TopoArbol1>();
 
     // This is public so the play button can see it.
@@ -123,11 +125,22 @@ public class GameManager : MonoBehaviour
         if (score >= 20)
         {
             isAWin = true;
+            getReward(isAWin);
         }
         else
         {
             isAWin = false;
         }
+    }
+
+    public void getReward(bool iswin)
+    {
+        if (iswin == true) 
+        {
+            getObject = true;
+        
+        }
+
     }
 
     public void Missed(int moleIndex, bool isMole)

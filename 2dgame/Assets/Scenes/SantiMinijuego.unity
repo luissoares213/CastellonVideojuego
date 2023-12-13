@@ -1289,7 +1289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749712497
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1355,6 +1355,8 @@ MonoBehaviour:
   impostorText: {fileID: 1676300074}
   timeText: {fileID: 1653842529}
   scoreText: {fileID: 378863382}
+  isAWin: 0
+  getObject: 0
 --- !u!4 &780447767
 Transform:
   m_ObjectHideFlags: 0
