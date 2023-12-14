@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30dbd2303e50fff46a3edf85032b4351, type: 3}
   m_Name: SceneInfo
   m_EditorClassIdentifier: 
-  acto: 3
-  cameraPos: {x: -80, y: 0, z: -10}
-  periDest: {x: -52, y: -17.3, z: 1}
-  periMov: {x: -52, y: -17.3, z: 1}
+  acto: 0
+  cameraPos: {x: 0, y: 60, z: -10}
+  periDest: {x: -5.50329, y: 42.44175, z: 0}
+  periMov: {x: -5.50329, y: 42.44175, z: 0}
