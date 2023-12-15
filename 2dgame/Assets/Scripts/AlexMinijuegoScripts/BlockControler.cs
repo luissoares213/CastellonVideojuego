@@ -46,8 +46,8 @@ public class BlockControler : MonoBehaviour
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            startPositionX = mousePos.x - this.transform.localPosition.x; 
-            startPositionY = mousePos.y - this.transform.localPosition.y;
+            startPositionX = mousePos.x - this.transform.position.x; 
+            startPositionY = mousePos.y - this.transform.position.y;
 
             grabbed = true;
             rb.bodyType = RigidbodyType2D.Dynamic; //Para que al colisionar con otros bloques no los atraviese

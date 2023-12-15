@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/AngelMinijuego.unity
     guid: 2397dc98df5931f40932c38b4c9cb4f1
   - enabled: 1
-    path: Assets/Scenes/Panaderia1.unity
+    path: Assets/Scenes/Acto2/Escena7-Panaderia1.unity
     guid: ad19ea25103c4894e8570ecc95644e57
   - enabled: 1
     path: Assets/Scenes/Minijuegos/SaraMinijuego.unity
