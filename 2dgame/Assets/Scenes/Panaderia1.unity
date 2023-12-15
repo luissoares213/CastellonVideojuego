@@ -361,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 579770019}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.78, y: -4.76, z: 0}
+  m_LocalPosition: {x: 7.78, y: -7.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -756,53 +756,13 @@ PrefabInstance:
     - {fileID: 2613363260013326360, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 713031430}
-    - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 713031429}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
 --- !u!1 &713031427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
   m_PrefabInstance: {fileID: 713031426}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &713031428 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3073978716654464157, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
-  m_PrefabInstance: {fileID: 713031426}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &713031429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713031427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7220b683e4b364c4391e90605e9e2a5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 713031428}
-  hoverColor: {r: 1, g: 0.923445, b: 0, a: 1}
-  startColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &713031430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713031427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d8ecd9fd925344c83f4d12995ab1e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objetivo: {fileID: 0}
-  velocidadMovimiento: 5
 --- !u!114 &713031431 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 520391253377459931, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
@@ -2409,6 +2369,8 @@ GameObject:
   - component: {fileID: 1999415831}
   - component: {fileID: 1999415830}
   - component: {fileID: 1999415829}
+  - component: {fileID: 1999415835}
+  - component: {fileID: 1999415836}
   m_Layer: 0
   m_Name: Panadera
   m_TagString: ClickableObject
@@ -2431,7 +2393,6 @@ MonoBehaviour:
   personajeMovible: {fileID: 713031431}
   destino: {fileID: 579770019}
   actoActivo: 0
-  npc: {fileID: 0}
 --- !u!114 &1999415830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2459,8 +2420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2668168636b63694ca1ef24d2b374b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Texto: {fileID: 0}
-  GloboTexto: {fileID: 0}
+  Texto: {fileID: 1179243140}
+  GloboTexto: {fileID: 683831192}
   LineasDialogo:
   - "Periodista: Hola buenas, te veo agobiada, \xBFestas bien?"
   - "Panadera: No del todo, me han llegado todas las entregas al mismo tiempo y el
@@ -2469,9 +2430,9 @@ MonoBehaviour:
   - 'Periodista: Si necesitas ayuda yo puedo ayudarte si no es mucha molestia.'
   - "Panadera: \xBFDe verdad? Que bien, pues si me ayudas, a cambio puedes coger
     cualquier cosa de mi panader\xEDa como pago. Much\xEDsimas gracias."
-  plyr: {fileID: 0}
-  globoTexto: {fileID: 0}
-  controlDial: {fileID: 0}
+  plyr: {fileID: 713031427}
+  globoTexto: {fileID: 683831192}
+  controlDial: {fileID: 1999415835}
 --- !u!61 &1999415832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2585,12 +2546,37 @@ Transform:
   - {fileID: 579770020}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1999415835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999415828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f3c8e4d3146d842bb4cfdf07b0b1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1999415836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999415828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae06e140d917934fb104cdf030be5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Minijuego: SaraMinijuego
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1322954279}
+  - {fileID: 752030681}
   - {fileID: 713031426}
   - {fileID: 463071240}
   - {fileID: 1999415834}
-  - {fileID: 752030681}

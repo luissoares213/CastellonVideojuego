@@ -7,7 +7,6 @@ public class EnterM : MonoBehaviour
 {
     private int csInd;
     [SerializeField] private string Minijuego;
-    public SceneInfo sceneInfo;
     void Start()
     {
     }

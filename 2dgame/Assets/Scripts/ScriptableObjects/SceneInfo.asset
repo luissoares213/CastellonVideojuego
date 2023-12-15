@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SceneInfo
   m_EditorClassIdentifier: 
   acto: 0
-  cameraPos: {x: 0, y: 60, z: -10}
+  cameraPos: {x: 0, y: 0, z: -10}
   periDest: {x: -5.50329, y: 42.44175, z: 0}
   periMov: {x: -5.50329, y: 42.44175, z: 0}
