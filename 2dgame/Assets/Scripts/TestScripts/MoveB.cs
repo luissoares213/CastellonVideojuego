@@ -25,4 +25,5 @@ public class MoveB : MonoBehaviour
     {
         personajeMovible.gameObject.GetComponent<MoveA>().moving(destino.transform.position, this.gameObject);
     }
+
 }

@@ -10,7 +10,7 @@ public class MoveA : MonoBehaviour
     private Animator animator;
     private bool talk;
     private bool hablando;
-    private GameObject h;
+    public GameObject h;
     private int Cont=0;
     // Start is called before the first frame update
     void Start()
