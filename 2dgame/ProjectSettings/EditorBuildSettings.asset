@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto1/Escena3-Ermita1.unity
     guid: 57c106cea922e064db62dd141751fa5b
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-Ermita2.unity
+    guid: 7d4552631f013b84ea7ba97db623a4fd
   m_configObjects: {}

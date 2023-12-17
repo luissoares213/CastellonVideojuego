@@ -12,7 +12,7 @@ public class win : MonoBehaviour
         {
             //Codigo de ganar
 
-            SceneManager.LoadScene("Escena3-Ermita1");
+            SceneManager.LoadScene("Escena3-Ermita2");
             //Debug.Log("Win"); 
         }
         else //<-- No hace falta
