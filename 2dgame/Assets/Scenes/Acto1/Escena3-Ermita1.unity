@@ -1018,7 +1018,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 680649232}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -1860,8 +1860,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 598.2101, y: -297.8077}
-  m_SizeDelta: {x: 596.5681, y: 385.5656}
+  m_AnchoredPosition: {x: 609, y: -283}
+  m_SizeDelta: {x: 395.9002, y: 227.6235}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832423553
 MonoBehaviour:
@@ -3550,7 +3550,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Vuelta al T\xEDtulo\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3614,7 +3614,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 3.6337852, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1668110303
@@ -4096,7 +4096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1837239391
 RectTransform:
   m_ObjectHideFlags: 0
