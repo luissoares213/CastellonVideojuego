@@ -13,6 +13,7 @@ public class Dialog : MonoBehaviour
     [SerializeField] private GameObject GloboTexto;
     [SerializeField, TextArea(4, 6)] private string[] LineasDialogo; //El 4 y el 6 es el espacio de las lineas.
     [SerializeField] private GameObject plyr;
+    [SerializeField] private int accionEnd;
 
     [SerializeField] private GameObject globoTexto;
 
@@ -84,6 +85,10 @@ public class Dialog : MonoBehaviour
             if (GetComponent<EnterM>()) 
             {
                 GetComponent<EnterM>().EnterGame();
+            }
+            if (GetComponent<EndDialogos>())
+            {
+                GetComponent<EndDialogos>().EndDial(accionEnd);
             }
         }
     }
