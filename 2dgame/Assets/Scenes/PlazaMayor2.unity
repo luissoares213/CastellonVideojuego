@@ -358,7 +358,7 @@ Transform:
   m_GameObject: {fileID: 101134322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.83, y: -1.7, z: 0}
+  m_LocalPosition: {x: 4.83, y: -4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1495,7 +1495,6 @@ MonoBehaviour:
   personajeMovible: {fileID: 0}
   destino: {fileID: 101134322}
   actoActivo: 0
-  npc: {fileID: 0}
 --- !u!114 &974128855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,8 +1531,10 @@ MonoBehaviour:
   - "Nicolas: Te lo dir\xE9 pero si juegas conmigo al escondite, estoy aburrido y
     nadie quiere ser el que pilla."
   plyr: {fileID: 0}
+  accionEnd: 0
   globoTexto: {fileID: 0}
   controlDial: {fileID: 0}
+  lineIndex: 0
 --- !u!61 &974128857
 BoxCollider2D:
   m_ObjectHideFlags: 0
