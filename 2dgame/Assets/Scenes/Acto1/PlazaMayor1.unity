@@ -1992,15 +1992,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: hoverColor.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: hoverColor.g
-      value: 0.8207547
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: hoverColor.r
-      value: 0.8207547
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: m_Name
