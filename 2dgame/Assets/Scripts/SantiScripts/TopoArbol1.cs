@@ -30,7 +30,7 @@ public class TopoArbol1 : MonoBehaviour
     public enum ChildType { Niño, Niña, Impostor};
     private ChildType childType;
     private float niñaRate = 0.3f;
-    private float impostorRate = 0.2f;
+    private float impostorRate = 0.3f;
     private int niñoIndex = 0;
 
 
