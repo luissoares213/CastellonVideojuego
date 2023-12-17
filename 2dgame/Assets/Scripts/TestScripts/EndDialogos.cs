@@ -23,7 +23,7 @@ public class EndDialogos : MonoBehaviour
         }
         else if (accionEnd == 2)
         {
-            SceneManager.LoadScene("Escena2-MuseoNoche");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

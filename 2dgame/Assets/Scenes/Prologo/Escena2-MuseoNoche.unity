@@ -841,8 +841,8 @@ GameObject:
   - component: {fileID: 1464632742}
   - component: {fileID: 1464632747}
   - component: {fileID: 1464632746}
-  - component: {fileID: 1464632745}
   - component: {fileID: 1464632748}
+  - component: {fileID: 1464632749}
   m_Layer: 0
   m_Name: Iddle Fantasma Groc
   m_TagString: Untagged
@@ -964,22 +964,11 @@ MonoBehaviour:
     el reloj."
   - "Vale, cuando obtenga el reloj, nos volveremos a encontrar aqu\xED, en el mismo
     sitio. Nos vemos."
-  plyr: {fileID: 0}
+  plyr: {fileID: 1588174493}
+  accionEnd: 2
   globoTexto: {fileID: 1974289776}
   controlDial: {fileID: 1464632742}
   lineIndex: 0
---- !u!114 &1464632745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464632739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4074e67901e638d45a13560627e9d77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1464632746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,6 +1041,27 @@ MonoBehaviour:
   caraDerecha: {fileID: 1230865241}
   caraIzquierda: {fileID: 691173093}
   eventosDialogo: {fileID: 1464632743}
+--- !u!114 &1464632749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464632739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe5ea1e977a3dd448b09bfdffeb347e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 0}
+  so: {fileID: 0}
+  dial: {fileID: 1464632743}
+  caraTexto: {fileID: 0}
+--- !u!1 &1588174493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+  m_PrefabInstance: {fileID: 438515332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1652551414
 GameObject:
   m_ObjectHideFlags: 0

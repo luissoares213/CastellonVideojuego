@@ -1895,8 +1895,10 @@ MonoBehaviour:
   GloboTexto: {fileID: 94379071}
   LineasDialogo:
   - Vamos a ver si todavia recuerdo como llegar a la ermita
-  - En mi libreta deberia tener un mapa del pueblo, con eso seguro que se como llegar.
+  - En mi libreta deberia tener un mapa del pueblo, con eso seguro que averiguo como
+    llegar.
   plyr: {fileID: 1425984900}
+  accionEnd: 0
   globoTexto: {fileID: 94379071}
   controlDial: {fileID: 1425984904}
   lineIndex: 0
@@ -1912,7 +1914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f3c8e4d3146d842bb4cfdf07b0b1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1425984911
+--- !u!114 &1425984905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1921,12 +1923,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425984900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b5beda7058a65a46a6d4255e2ee2a2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c3740e2e7d2f264786bd40a60250137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personajeMovible: {fileID: 1425984901}
-  destino: {fileID: 1425984900}
-  actoActivo: 0
 --- !u!1001 &1456014615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1992,8 +1991,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+      propertyPath: hoverColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: hoverColor.g
-      value: 1
+      value: 0.8207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+      propertyPath: hoverColor.r
+      value: 0.8207547
       objectReference: {fileID: 0}
     - target: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: m_Name
@@ -2015,7 +2022,7 @@ PrefabInstance:
       addedObject: {fileID: 1425984903}
     - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1425984911}
+      addedObject: {fileID: 1425984905}
   m_SourcePrefab: {fileID: 100100000, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
 --- !u!1 &1667333881
 GameObject:
@@ -2073,6 +2080,7 @@ MonoBehaviour:
   - Hola
   - Hola
   plyr: {fileID: 1425984900}
+  accionEnd: 0
   globoTexto: {fileID: 94379071}
   controlDial: {fileID: 1667333884}
   lineIndex: 0
@@ -2184,7 +2192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 1667333886}
-  hoverColor: {r: 1, g: 1, b: 0, a: 1}
+  hoverColor: {r: 0.8773585, g: 0.8773585, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &1667333889
 BoxCollider2D:

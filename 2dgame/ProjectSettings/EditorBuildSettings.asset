@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologo/Escena2-MuseoNoche.unity
     guid: 79e2960db4db2964fbb7ad639cd974e7
   - enabled: 1
+    path: Assets/Scenes/Acto1/PlazaMayor1.unity
+    guid: b96e703fed91e54428557268a5a3b56f
+  - enabled: 1
     path: Assets/Scenes/Minijuegos/Alex Minijuego.unity
     guid: 05e4e4155aa499c4993ef8ddcd665939
   - enabled: 0
