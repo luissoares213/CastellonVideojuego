@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &50182386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -400,9 +400,6 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
-  primero: {fileID: 50182385}
-  segundo: {fileID: 2084673519}
-  boton: {fileID: 1586144642}
 --- !u!1 &55705043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,7 +2387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2576295558883756178, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 2576295558883756178, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3014,7 +3011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2084673520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,9 +3027,12 @@ MonoBehaviour:
   Texto: {fileID: 2120871853}
   GloboTexto: {fileID: 55705043}
   LineasDialogo:
-  - "Entonces... \xBFme deja entrar en la Ermita?"
-  - "Por supuesto, ya le he abierto la puerta, ac\xE9rquese a la entrada y ver\xE1
-    la caja, la he dejado encima del atril."
+  - "Ya tengo la llave, tienes alguna idea de d\xF3nde podr\xEDa estar la caja?"
+  - "Me temo que no se\xF1ora, aunque siempre he tenido la corazonada de que la caja
+    ha estado m\xE1s bien fuera que dentro de la ermita, pues la he revisado mucho"
+  - "(Quiz\xE1 est\xE1 en los alrededores enterrada, aunque sin alguna herramienta
+    como una pala no puedo llegar a ning\xFAn sitio, deber\xEDa preguntar por el
+    pueblo)"
   plyr: {fileID: 1668010171}
   accionEnd: 1
   globoTexto: {fileID: 55705043}
