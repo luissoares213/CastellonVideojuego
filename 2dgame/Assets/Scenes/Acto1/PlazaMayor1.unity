@@ -2044,6 +2044,7 @@ GameObject:
   - component: {fileID: 1667333882}
   - component: {fileID: 1667333889}
   - component: {fileID: 1667333888}
+  - component: {fileID: 1667333890}
   m_Layer: 0
   m_Name: "ni\xF1o"
   m_TagString: Untagged
@@ -2081,8 +2082,11 @@ MonoBehaviour:
   Texto: {fileID: 1137006366}
   GloboTexto: {fileID: 94379071}
   LineasDialogo:
-  - Hola
-  - Hola
+  - "Hola grandull\xF3n, \xBFsabes por donde se encuentra la ermita?"
+  - "Si lo s\xE9."
+  - "Y... \xBFme lo puedes decir?"
+  - No me apetece, jeje.
+  - Vaya.
   plyr: {fileID: 1425984900}
   accionEnd: 0
   globoTexto: {fileID: 94379071}
@@ -2243,6 +2247,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.939206, y: 9.708972}
   m_EdgeRadius: 0
+--- !u!95 &1667333890
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667333881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b154b8eab94213246a7136e7c477c66f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1693098017
 GameObject:
   m_ObjectHideFlags: 0
