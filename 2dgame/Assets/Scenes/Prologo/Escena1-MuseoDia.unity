@@ -981,6 +981,9 @@ MonoBehaviour:
   - Alcalde, si quiere, puedo prestar mi ayuda para intentar encontrar la pieza que
     le falta al museo.
   - "Muchas gracias, ser\xEDa de gran ayuda."
+  - "(Aun si me ha dado el visto bueno, tendr\xE9 que colarme cuando no haya nadie
+    por la noche para recabar m\xE1s pruebas, a fin de cuentas todos estos pueden
+    ser sospechosos...)"
   plyr: {fileID: 1990483419}
   accionEnd: 2
   globoTexto: {fileID: 703036937}

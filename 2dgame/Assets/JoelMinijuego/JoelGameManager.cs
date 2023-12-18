@@ -27,6 +27,8 @@ public class GameManager2 : MonoBehaviour {
   public const int DIMENSION_X = 6;
   public const int DIMENSION_Y = 7;
 
+  public AudioSource woodblock2;
+
   public Texture2D textureStart;
 
   public bool[,] onspot = new bool[DIMENSION_Y,DIMENSION_X];
@@ -84,6 +86,11 @@ public class GameManager2 : MonoBehaviour {
       StartGame(texture);
       }
     }
+  }
+
+  public void PlayAudio()
+  {
+    woodblock2.Play();
   }
 
   public void StartGame(Texture2D jigsawTexture) {
@@ -510,6 +517,8 @@ public class GameManager2 : MonoBehaviour {
               otherPositionP[Irow,Jcol] = draggingPiece;
               occupied[Irow,Jcol] = true;
 
+              PlayAudio();
+
               int ind = -1;
 
               for(int i = 0; i< texturePiece.Length; i++) 
@@ -617,7 +626,7 @@ public class GameManager2 : MonoBehaviour {
       }
       if (piecesCorrect == piecePivot.Length) {
         print("Bien Hecho!");
-                    SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene("MenuInicial");
       }
       break;
     }
