@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager2 : MonoBehaviour {
   [Header("Game Elements")]
@@ -616,6 +617,7 @@ public class GameManager2 : MonoBehaviour {
       }
       if (piecesCorrect == piecePivot.Length) {
         print("Bien Hecho!");
+                    SceneManager.LoadScene("MenuInicial");
       }
       break;
     }

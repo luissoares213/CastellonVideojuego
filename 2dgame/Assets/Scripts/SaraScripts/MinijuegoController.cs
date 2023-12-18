@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MinijuegoController : MonoBehaviour
 {
@@ -26,12 +27,17 @@ public class MinijuegoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tiempo > 0) {
+        if (tiempo > 0)
+        {
             tiempo -= Time.deltaTime;
-            tiempoText.text = FormatearTiempo(tiempo);        
+            tiempoText.text = FormatearTiempo(tiempo);
         }
         else
+        {
             tiempoText.text = "Fin del tiempo";
+            SceneManager.LoadScene("MenuInicial");
+        }
+
     }
 
     string FormatearTiempo(float tiempo){

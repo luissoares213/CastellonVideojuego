@@ -18,6 +18,6 @@ public class SiguienteEscena : MonoBehaviour
     {
         // Aquí defines la lógica para cargar la siguiente escena
         // Asegúrate de que las escenas estén configuradas en Build Settings
-        SceneManager.LoadScene("Museo");
+        SceneManager.LoadScene("MenuInicial");
     }
 }

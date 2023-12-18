@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
         if (type == 0)
         {
             outOfTimeText.SetActive(true);
+            SceneManager.LoadScene("MenuInicial");
         }
         else
         {
@@ -138,6 +140,7 @@ public class GameManager : MonoBehaviour
         if (iswin == true) 
         {
             getObject = true;
+
         
         }
 
