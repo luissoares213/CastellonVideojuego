@@ -21,6 +21,7 @@ public class actvateM : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         minijuego.SetActive(true);
+        Time.timeScale = 1f;
 
 
     }

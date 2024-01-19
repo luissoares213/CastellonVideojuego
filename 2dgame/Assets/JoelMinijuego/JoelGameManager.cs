@@ -14,7 +14,8 @@ public class GameManager2 : MonoBehaviour {
   [SerializeField] private Transform piecePrefab;
 
     //Al terminar. Añadido Por Alex C
-    public string volver = "MenuInicial";
+
+    public SceneInfo sceneInfo;
 
   [Header("UI Elements")]
   [SerializeField] private List<Texture2D> imageTextures;
@@ -629,7 +630,7 @@ public class GameManager2 : MonoBehaviour {
       }
       if (piecesCorrect == piecePivot.Length) {
         print("Bien Hecho!");
-        SceneManager.LoadScene(volver);
+        SceneManager.LoadScene(sceneInfo.volver);
       }
       break;
     }

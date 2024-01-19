@@ -26,4 +26,7 @@ public class ActivarObjeto : MonoBehaviour
     public void Activar() {
         activar.SetActive(true);
     }
+    public void Desactivar() {
+        activar.SetActive(false);
+    }
 }

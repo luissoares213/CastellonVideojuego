@@ -35,6 +35,10 @@ public class EndDialogos : MonoBehaviour
             segundo.SetActive(true);
             boton.SetActive(true);
         }
+        else if (accionEnd==4)
+        {
+            GetComponent<EnterM>().MinijuegoJoel("Escena5-Nevera");
+        }
     }
 
 

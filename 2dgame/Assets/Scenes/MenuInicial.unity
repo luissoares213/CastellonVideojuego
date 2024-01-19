@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: SaraMinijuego
+  scene: {fileID: 0}
 --- !u!114 &117783187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2024,6 +2025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: AngelMinijuego
+  scene: {fileID: 0}
 --- !u!114 &774546085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2668,6 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: Alex Minijuego
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &1061899745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2714,14 +2717,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1061899744}
         m_TargetAssemblyTypeName: EnterM, Assembly-CSharp
-        m_MethodName: EnterGame
-        m_Mode: 1
+        m_MethodName: MinijuegoAlex
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MenuInicial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1061899746
@@ -3297,6 +3300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: JoelMinijuego
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &1331847706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3444,6 +3448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: SantiMinijuego
+  scene: {fileID: 0}
 --- !u!114 &1340254623
 MonoBehaviour:
   m_ObjectHideFlags: 0

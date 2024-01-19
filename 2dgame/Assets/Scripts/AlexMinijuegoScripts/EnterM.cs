@@ -7,6 +7,7 @@ public class EnterM : MonoBehaviour
 {
     private int csInd;
     [SerializeField] private string Minijuego;
+    public SceneInfo scene;
     void Start()
     {
     }
@@ -23,7 +24,14 @@ public class EnterM : MonoBehaviour
         PlayerPrefs.SetInt("SavedScene", csInd);
         SceneManager.LoadScene(Minijuego);
     }
-    public void MinijuegoJoel(string Volver) {
-        GetComponent<GameManager2>().volver = Volver;
+    public void MinijuegoJoel(string Volver) 
+    {
+        scene.volver = Volver;
+        SceneManager.LoadScene("JoelMinijuego");
+    }
+    public void MinijuegoAlex(string Volver)
+    {
+        scene.volver = Volver;
+        SceneManager.LoadScene("Alex Minijuego");
     }
 }
