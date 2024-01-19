@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivarObjeto : MonoBehaviour
+public class Escenario : MonoBehaviour
 {
-    [SerializeField] private GameObject activar;
-
     // Start is called before the first frame update
+    public string nombreEscenario;
+    public bool pulsado;
     void Start()
     {
-        
+        pulsado = false;
     }
 
     // Update is called once per frame
@@ -17,13 +17,9 @@ public class ActivarObjeto : MonoBehaviour
     {
         
     }
-    private void OnMouseDown()
+    public void Pulsado()
     {
-        activar.SetActive(true);
-
-
+        pulsado = true;
     }
-    public void Activar() {
-        activar.SetActive(true);
-    }
+
 }
