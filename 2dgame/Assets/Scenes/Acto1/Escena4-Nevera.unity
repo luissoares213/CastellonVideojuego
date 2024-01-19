@@ -1525,7 +1525,7 @@ MonoBehaviour:
   - Top text
   - Bottom text
   plyr: {fileID: 413035858}
-  accionEnd: 2
+  accionEnd: 4
   globoTexto: {fileID: 1997156426}
   controlDial: {fileID: 580878022}
   lineIndex: 0

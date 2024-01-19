@@ -23,4 +23,7 @@ public class EnterM : MonoBehaviour
         PlayerPrefs.SetInt("SavedScene", csInd);
         SceneManager.LoadScene(Minijuego);
     }
+    public void MinijuegoJoel(string Volver) {
+        GetComponent<GameManager2>().volver = Volver;
+    }
 }
