@@ -45,9 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/SantiMinijuego.unity
     guid: c823e62e367a5914a98dea5aa17173d6
   - enabled: 1
-    path: Assets/Scenes/Minijuegos/JoelMinijuego.unity
-    guid: 00d02693e2ed66842bddaa43bb25a3a4
-  - enabled: 1
     path: Assets/Scenes/Acto1/Escena4-Nevera.unity
     guid: f4bab99623786bc4ca512a21e1ab7bc7
+  - enabled: 1
+    path: Assets/Scenes/Minijuegos/JoelMinijuego.unity
+    guid: 00d02693e2ed66842bddaa43bb25a3a4
   m_configObjects: {}
