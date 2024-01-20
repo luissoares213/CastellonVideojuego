@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Alex Minijuego.unity
     guid: 05e4e4155aa499c4993ef8ddcd665939
-  - enabled: 0
-    path: Assets/Scenes/Museo.unity
-    guid: 4b45de0dd4ebeed4ebe59423563c388a
   - enabled: 1
     path: Assets/Scenes/Minijuegos/AngelMinijuego.unity
     guid: 2397dc98df5931f40932c38b4c9cb4f1
@@ -62,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto1/Escena4-Ayuntamiento.unity
     guid: 8deae86234d39094a963d9b78f6ce36e
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena4-PlazaMayor.unity
+    guid: 40dbbbb7cdd05ac4fbe15c7d6ff2d4d7
   m_configObjects: {}
