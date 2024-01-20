@@ -53,4 +53,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto1/Escena5-Nevera.unity
     guid: 1ebd6ba028221da4c8a0b994110260f0
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-PlazaMayor.unity
+    guid: d3eef659fcb9b7c41b4b96539d9c68a6
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-Ayuntamiento.unity
+    guid: ae9e558be6a8cc845b5e0aef738bfb0c
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena4-Ayuntamiento.unity
+    guid: 8deae86234d39094a963d9b78f6ce36e
   m_configObjects: {}
