@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escena3-Ermita1
+  nombreEscenario: Escena3-Ermita2
   pulsado: 0
 --- !u!114 &226073209
 MonoBehaviour:
@@ -3844,7 +3844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escena3-Ayuntamiento
+  nombreEscenario: Escena4-Ayuntamiento
   pulsado: 0
 --- !u!1 &1968708835
 GameObject:

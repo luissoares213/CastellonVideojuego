@@ -3495,7 +3495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escenario5-PlazaMayor
+  nombreEscenario: Escena5-PlazaMayor
   pulsado: 0
 --- !u!114 &1505819665
 MonoBehaviour:
@@ -3973,7 +3973,7 @@ GameObject:
   - component: {fileID: 1783004359}
   - component: {fileID: 1783004358}
   m_Layer: 0
-  m_Name: alcaldeFrfr2
+  m_Name: Anciano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4129,8 +4129,8 @@ MonoBehaviour:
   Texto: {fileID: 448459386}
   GloboTexto: {fileID: 1997156426}
   LineasDialogo:
-  - Top Text
-  - Bottom text
+  - Muchas gracias
+  - No, gracias a ti.
   plyr: {fileID: 413035858}
   accionEnd: 4
   globoTexto: {fileID: 1997156426}
