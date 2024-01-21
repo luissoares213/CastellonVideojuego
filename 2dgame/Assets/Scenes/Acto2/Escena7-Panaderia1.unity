@@ -2423,16 +2423,17 @@ MonoBehaviour:
   Texto: {fileID: 1179243140}
   GloboTexto: {fileID: 683831192}
   LineasDialogo:
-  - "Periodista: Hola buenas, te veo agobiada, \xBFestas bien?"
-  - "Panadera: No del todo, me han llegado todas las entregas al mismo tiempo y el
-    chico que tiene que ordenarlos est\xE1 de vacaciones y no tengo tiempo de hacerlo
-    yo."
-  - 'Periodista: Si necesitas ayuda yo puedo ayudarte si no es mucha molestia.'
-  - "Panadera: \xBFDe verdad? Que bien, pues si me ayudas, a cambio puedes coger
-    cualquier cosa de mi panader\xEDa como pago. Much\xEDsimas gracias."
+  - "Hola buenas, te veo agobiada, \xBFestas bien?"
+  - "No del todo, me han llegado todas las entregas al mismo tiempo y el chico que
+    tiene que ordenarlos est\xE1 de vacaciones y no tengo tiempo de hacerlo yo."
+  - Si necesitas ayuda yo puedo ayudarte si no es mucha molestia.
+  - "\xBFDe verdad? Que bien, pues si me ayudas, a cambio puedes coger cualquier
+    cosa de mi panader\xEDa como pago. Much\xEDsimas gracias."
   plyr: {fileID: 713031427}
+  accionEnd: 0
   globoTexto: {fileID: 683831192}
   controlDial: {fileID: 1999415835}
+  lineIndex: 0
 --- !u!61 &1999415832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2571,6 +2572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: SaraMinijuego
+  scene: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
