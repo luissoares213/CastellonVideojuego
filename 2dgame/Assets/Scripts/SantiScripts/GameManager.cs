@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<TopoArbol1> niños;
 
+    //Añadido de Alex C
+    [SerializeField] private SceneInfo sceneInfo;
+
     [Header("UI objects")]
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject gameUI;
@@ -58,7 +61,7 @@ public class GameManager : MonoBehaviour
         if (type == 0)
         {
             outOfTimeText.SetActive(true);
-            SceneManager.LoadScene("MenuInicial");
+            SceneManager.LoadScene(sceneInfo.volver);
         }
         else
         {
@@ -84,7 +87,15 @@ public class GameManager : MonoBehaviour
             if (timeRemaining <= 0)
             {
                 timeRemaining = 0;
-                GameOver(0);
+                //añadido de Alex C
+                if (score > 20)
+                {
+                    GameOver(0);
+                }
+                else
+                {
+                    GameOver(1);
+                }
             }
             timeText.text = $"{(int)timeRemaining / 60}:{(int)timeRemaining % 60:D2}";
             // Check if we need to start any more moles.

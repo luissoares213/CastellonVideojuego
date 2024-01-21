@@ -52,6 +52,12 @@ public class EndDialogos : MonoBehaviour
         else if (accionEnd == 5) {
             bc.enabled = true;
         }
+        else if (accionEnd == 6)
+        {
+            dial.enabled = true;
+            caraTexto.enabled = true;
+            dial.IniciarDialogo();
+        }
     }
 
 

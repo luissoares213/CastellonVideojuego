@@ -1349,6 +1349,7 @@ MonoBehaviour:
   - {fileID: 56777719}
   - {fileID: 642371466}
   - {fileID: 20637976}
+  sceneInfo: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
   playButton: {fileID: 845917224}
   gameUI: {fileID: 749712496}
   outOfTimeText: {fileID: 471111762}

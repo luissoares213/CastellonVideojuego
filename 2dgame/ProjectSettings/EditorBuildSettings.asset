@@ -80,4 +80,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/Escena8-PlazaMayor.unity
     guid: 18b97fe4ab24e3746b213758fe79e288
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Ermita.unity
+    guid: 855a0fb19c5b0ef4da615e97ca0fda8f
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Ayuntamiento.unity
+    guid: 6707fd3fc1bee4645b8ac62fe00a7464
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Nevera.unity
+    guid: f38ae17eb143a61439e076251090f6bd
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Ayuntamiento.unity
+    guid: 4d7d37cabf612a442b9dc7ac7376a369
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Ermita.unity
+    guid: 9895a40e79c92f84ea496505e82ba58b
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Nevera.unity
+    guid: 46411d23cd1d5ee49853086b3e9b206c
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Parque.unity
+    guid: 2ff09809af4c7d44da65f853a9dff0dd
   m_configObjects: {}
