@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SiguienteEscena : MonoBehaviour
 {
     public Button boton;
+    [SerializeField] private SceneInfo sceneInfo;
 
     private void Start()
     {
@@ -18,6 +19,6 @@ public class SiguienteEscena : MonoBehaviour
     {
         // Aquí defines la lógica para cargar la siguiente escena
         // Asegúrate de que las escenas estén configuradas en Build Settings
-        SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene(sceneInfo.volver);
     }
 }

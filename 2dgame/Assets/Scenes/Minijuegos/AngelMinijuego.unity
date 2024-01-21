@@ -1486,6 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boton: {fileID: 843070212}
+  sceneInfo: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &843070212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,7 +2957,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HAS GANADO!
+  m_Text: 'HAS GANADO!
+
+    -Continuar-'
 --- !u!222 &1474133314
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -101,4 +101,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/Escena9-Parque.unity
     guid: 2ff09809af4c7d44da65f853a9dff0dd
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Panaderia2.unity
+    guid: 7bae28394e152624d8199e6d66d36fd5
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena10-Panaderia3.unity
+    guid: 9112752e99902dc46a7fab90ee831298
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Epilogo-Museo.unity
+    guid: cdb07bb7635ddfd47a8c157019d9ab87
   m_configObjects: {}
