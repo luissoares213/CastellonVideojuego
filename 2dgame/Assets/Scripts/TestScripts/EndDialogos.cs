@@ -9,6 +9,7 @@ public class EndDialogos : MonoBehaviour
     [SerializeField] private AudioSource so;
     [SerializeField] private Dialog dial;
     [SerializeField] private CarasTexto caraTexto;
+    [SerializeField] private string volver;
 
     [SerializeField] private GameObject primero;
     [SerializeField] private GameObject segundo;
@@ -38,7 +39,7 @@ public class EndDialogos : MonoBehaviour
         }
         else if (accionEnd == 4)
         {
-            GetComponent<EnterM>().MinijuegoJoel("Escena5-Nevera");
+            GetComponent<EnterM>().MinijuegoYVolver(volver);
         }
         else if (accionEnd == 5) {
             bc.enabled = true;

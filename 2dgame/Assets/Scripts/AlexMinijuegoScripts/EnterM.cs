@@ -24,14 +24,9 @@ public class EnterM : MonoBehaviour
         PlayerPrefs.SetInt("SavedScene", csInd);
         SceneManager.LoadScene(Minijuego);
     }
-    public void MinijuegoJoel(string Volver) 
+    public void MinijuegoYVolver(string Volver) 
     {
         scene.volver = Volver;
-        SceneManager.LoadScene("JoelMinijuego");
-    }
-    public void MinijuegoAlex(string Volver)
-    {
-        scene.volver = Volver;
-        SceneManager.LoadScene("Alex Minijuego");
+        SceneManager.LoadScene(Minijuego);
     }
 }

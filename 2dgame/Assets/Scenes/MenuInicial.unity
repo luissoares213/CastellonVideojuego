@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: SaraMinijuego
-  scene: {fileID: 0}
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &117783187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,7 +2025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: AngelMinijuego
-  scene: {fileID: 0}
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &774546085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: SantiMinijuego
-  scene: {fileID: 0}
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!114 &1340254623
 MonoBehaviour:
   m_ObjectHideFlags: 0

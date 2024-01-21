@@ -400,9 +400,12 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
+  volver: 
+  minijuego: 
   primero: {fileID: 0}
   segundo: {fileID: 0}
   boton: {fileID: 0}
+  bc: {fileID: 0}
 --- !u!1 &55705043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,19 +2813,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1586144645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1586144647}
-        m_TargetAssemblyTypeName: EnterM, Assembly-CSharp
-        m_MethodName: EnterGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1586144645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,7 +2865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Minijuego: Alex Minijuego
-  scene: {fileID: 0}
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
 --- !u!1 &1588584537
 GameObject:
   m_ObjectHideFlags: 0

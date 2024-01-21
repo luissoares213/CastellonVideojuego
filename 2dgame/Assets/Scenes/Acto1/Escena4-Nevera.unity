@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 580878027}
   - component: {fileID: 580878029}
   m_Layer: 0
-  m_Name: alcaldeFrfr2
+  m_Name: Anciano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1354,9 +1354,12 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
+  volver: Escena5-Nevera
+  minijuego: MinijuegoJoel
   primero: {fileID: 0}
   segundo: {fileID: 0}
   boton: {fileID: 0}
+  bc: {fileID: 0}
 --- !u!114 &580878026
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -400,9 +400,12 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
+  volver: 
+  minijuego: 
   primero: {fileID: 50182385}
   segundo: {fileID: 2084673519}
   boton: {fileID: 1586144642}
+  bc: {fileID: 0}
 --- !u!1 &55705043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3185,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1586144647}
         m_TargetAssemblyTypeName: EnterM, Assembly-CSharp
-        m_MethodName: MinijuegoAlex
+        m_MethodName: MinijuegoYVolver
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

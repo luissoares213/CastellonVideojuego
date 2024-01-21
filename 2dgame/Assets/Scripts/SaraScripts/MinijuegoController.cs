@@ -11,6 +11,9 @@ public class MinijuegoController : MonoBehaviour
     public GameObject Pan2;
     public GameObject Pan3;
 
+    //Adicion de Alex C
+    [SerializeField] private SceneInfo scene;
+
     public TMP_Text puntosText;
     public TMP_Text tiempoText;
     
@@ -35,7 +38,15 @@ public class MinijuegoController : MonoBehaviour
         else
         {
             tiempoText.text = "Fin del tiempo";
-            SceneManager.LoadScene("MenuInicial");
+            //Adicion de Alex C
+            if (puntos > 15)
+            {
+                SceneManager.LoadScene(scene.volver);
+            }
+            else
+            {
+                SceneManager.LoadScene("SaraMinijuego");
+            }
         }
 
     }

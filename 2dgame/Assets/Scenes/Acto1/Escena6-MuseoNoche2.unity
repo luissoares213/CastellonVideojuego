@@ -824,6 +824,8 @@ GameObject:
   - component: {fileID: 1338097126}
   - component: {fileID: 1338097129}
   - component: {fileID: 1338097128}
+  - component: {fileID: 1338097130}
+  - component: {fileID: 1338097131}
   m_Layer: 0
   m_Name: Iddle Fantasma Groc
   m_TagString: Untagged
@@ -929,7 +931,6 @@ MonoBehaviour:
   - "Has hecho un muy buen trabajo recuperando mi reloj, solo te pedir\xE9 un objeto
     m\xE1s y te dir\xE9 el responsable del robo."
   - "Perfecto. El siguiente objeto que debo encontrar \xBFcu\xE1l es?"
-  - "Perfecto. El siguiente objeto que debo encontrar \xBFcu\xE1l es?"
   - "Tienes que encontrar mi antiguo cuchillo. Lo \xFAltimo que s\xE9, es que lo
     tiene un descendiente m\xEDo que vive en el pueblo"
   - "Vale. Empezar\xE9 por buscar quien es descendiente tuyo en el pueblo. Me marcho."
@@ -995,9 +996,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f731d997bb13b384b8db13f3dded74dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caraDerecha: {fileID: 1588463443}
-  caraIzquierda: {fileID: 1412065824}
+  caraDerecha: {fileID: 1412065824}
+  caraIzquierda: {fileID: 1588463443}
   eventosDialogo: {fileID: 1338097127}
+--- !u!114 &1338097130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338097123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3740e2e7d2f264786bd40a60250137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1338097131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338097123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe5ea1e977a3dd448b09bfdffeb347e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 0}
+  so: {fileID: 0}
+  dial: {fileID: 0}
+  caraTexto: {fileID: 0}
+  volver: 
+  primero: {fileID: 0}
+  segundo: {fileID: 0}
+  boton: {fileID: 0}
+  bc: {fileID: 0}
 --- !u!1 &1412065824
 GameObject:
   m_ObjectHideFlags: 0
