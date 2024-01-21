@@ -58,6 +58,7 @@ public class EndDialogos : MonoBehaviour
             caraTexto.enabled = true;
             dial.IniciarDialogo();
         }
+
     }
 
 
