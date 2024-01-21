@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escena4-Ayuntamiento
+  nombreEscenario: Escena5-Ayuntamiento
   pulsado: 0
 --- !u!1 &865892781
 GameObject:
@@ -2215,7 +2215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escena3-Ermita2
+  nombreEscenario: Escena5-ErmitaconPala
   pulsado: 0
 --- !u!1 &876588617
 GameObject:
@@ -3767,7 +3767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4324cb1f96749d74794e434810cd6b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscenario: Escena4-PlazaMayor
+  nombreEscenario: Escena5-PlazaMayor
   pulsado: 0
 --- !u!114 &1505819665
 MonoBehaviour:

@@ -13,6 +13,7 @@ public class EndDialogos : MonoBehaviour
     [SerializeField] private GameObject primero;
     [SerializeField] private GameObject segundo;
     [SerializeField] private GameObject boton;
+    [SerializeField] private BoxCollider2D bc;
 
     public void EndDial(int accionEnd)
     {
@@ -35,9 +36,12 @@ public class EndDialogos : MonoBehaviour
             segundo.SetActive(true);
             boton.SetActive(true);
         }
-        else if (accionEnd==4)
+        else if (accionEnd == 4)
         {
             GetComponent<EnterM>().MinijuegoJoel("Escena5-Nevera");
+        }
+        else if (accionEnd == 5) {
+            bc.enabled = true;
         }
     }
 
