@@ -822,10 +822,13 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
+  volver: 
+  video: {fileID: 0}
   primero: {fileID: 0}
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 1783004360}
+  ct: {fileID: 1783004363}
 --- !u!1 &416138090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,10 +3905,13 @@ MonoBehaviour:
   so: {fileID: 0}
   dial: {fileID: 0}
   caraTexto: {fileID: 0}
+  volver: 
+  video: {fileID: 0}
   primero: {fileID: 0}
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!114 &1783004363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3913,7 +3919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783004357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f731d997bb13b384b8db13f3dded74dd, type: 3}
   m_Name: 

@@ -17,6 +17,7 @@ public class EndDialogos : MonoBehaviour
     [SerializeField] private GameObject segundo;
     [SerializeField] private GameObject boton;
     [SerializeField] private BoxCollider2D bc;
+    [SerializeField] private CarasTexto ct;
     public void FinVideo(VideoPlayer vp) {
         video.SetActive(false);
         so.clip = sonido;
@@ -51,6 +52,7 @@ public class EndDialogos : MonoBehaviour
         }
         else if (accionEnd == 5) {
             bc.enabled = true;
+            ct.enabled = true;
         }
         else if (accionEnd == 6)
         {
