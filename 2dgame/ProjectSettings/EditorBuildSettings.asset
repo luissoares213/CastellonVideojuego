@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Alex Minijuego.unity
     guid: 05e4e4155aa499c4993ef8ddcd665939
-  - enabled: 0
-    path: Assets/Scenes/Museo.unity
-    guid: 4b45de0dd4ebeed4ebe59423563c388a
   - enabled: 1
     path: Assets/Scenes/Minijuegos/AngelMinijuego.unity
     guid: 2397dc98df5931f40932c38b4c9cb4f1
@@ -33,9 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/SaraMinijuego.unity
     guid: f02e6a3e7f2e9d64ea8601748fd4d136
   - enabled: 1
-    path: Assets/Scenes/Acto1/Escena5-ErmitaconPala.unity
-    guid: d8ff78ac31235ce4ea09b2f4f303e4c5
-  - enabled: 1
     path: Assets/Scenes/Acto1/Escena3-Ermita1.unity
     guid: 57c106cea922e064db62dd141751fa5b
   - enabled: 1
@@ -45,6 +39,75 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuegos/SantiMinijuego.unity
     guid: c823e62e367a5914a98dea5aa17173d6
   - enabled: 1
+    path: Assets/Scenes/Acto1/Escena4-Nevera.unity
+    guid: f4bab99623786bc4ca512a21e1ab7bc7
+  - enabled: 1
     path: Assets/Scenes/Minijuegos/JoelMinijuego.unity
     guid: 00d02693e2ed66842bddaa43bb25a3a4
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena5-Nevera.unity
+    guid: 1ebd6ba028221da4c8a0b994110260f0
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-PlazaMayor.unity
+    guid: d3eef659fcb9b7c41b4b96539d9c68a6
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-Ayuntamiento.unity
+    guid: ae9e558be6a8cc845b5e0aef738bfb0c
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena4-Ayuntamiento.unity
+    guid: 8deae86234d39094a963d9b78f6ce36e
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena4-PlazaMayor.unity
+    guid: 40dbbbb7cdd05ac4fbe15c7d6ff2d4d7
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena5-Ayuntamiento.unity
+    guid: 70cc7d2ed0381854e92ab39b6fc93298
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena5-PlazaMayor.unity
+    guid: ee070565a51c069429ff230b69457444
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena5-ErmitaconPala.unity
+    guid: d8ff78ac31235ce4ea09b2f4f303e4c5
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena6-MuseoNoche2.unity
+    guid: af4f86caacf35e54798e9caf0406cd48
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena6-PlazaMayor.unity
+    guid: 0345c26a0993e814aba4eafac8cdbb9d
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Panaderia.unity
+    guid: bcaf048a5b94d8e4aa8cafc2aa796ffa
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-PlazaMayor.unity
+    guid: 18b97fe4ab24e3746b213758fe79e288
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Ermita.unity
+    guid: 855a0fb19c5b0ef4da615e97ca0fda8f
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Ayuntamiento.unity
+    guid: 6707fd3fc1bee4645b8ac62fe00a7464
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Nevera.unity
+    guid: f38ae17eb143a61439e076251090f6bd
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Ayuntamiento.unity
+    guid: 4d7d37cabf612a442b9dc7ac7376a369
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Ermita.unity
+    guid: 9895a40e79c92f84ea496505e82ba58b
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Nevera.unity
+    guid: 46411d23cd1d5ee49853086b3e9b206c
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Parque.unity
+    guid: 2ff09809af4c7d44da65f853a9dff0dd
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Panaderia2.unity
+    guid: 7bae28394e152624d8199e6d66d36fd5
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena10-Panaderia3.unity
+    guid: 9112752e99902dc46a7fab90ee831298
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Epilogo-Museo.unity
+    guid: cdb07bb7635ddfd47a8c157019d9ab87
   m_configObjects: {}

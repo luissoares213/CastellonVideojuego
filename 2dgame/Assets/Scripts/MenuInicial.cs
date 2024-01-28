@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuInicial : MonoBehaviour
 {
     public SceneInfo sceneInfo;
+    private void Start()
+    {
+        sceneInfo.volver = "MenuInicial";
+    }
     public void Jugar()
     {
         sceneInfo.cameraPos = new Vector3(0, 0, -10);

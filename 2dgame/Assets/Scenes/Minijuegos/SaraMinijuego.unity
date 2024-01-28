@@ -1704,10 +1704,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Coloca los panes en sus bandejas correspondientes y pulsa la campana para
-    entregarlos.\nConsigue todos los puntos que puedas.\n\xA1BUENA SUERTE!"
+    entregarlos.\nIntenta conseguir m\xE1s de 15 puntos.\n\xA1BUENA SUERTE!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
+  m_sharedMaterial: {fileID: -8237087996061170709, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2139,6 +2139,7 @@ MonoBehaviour:
   Pan1: {fileID: 2605973809437633195, guid: 8accf79b268ce8d44a90699c5b2306cd, type: 3}
   Pan2: {fileID: 8196580341993596541, guid: f7766db1907d32e47b6390d9693261e0, type: 3}
   Pan3: {fileID: 8721600184570786598, guid: 767aa2ae7c1b85147bc6e442b3518e31, type: 3}
+  scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
   puntosText: {fileID: 2075404459}
   tiempoText: {fileID: 398237262}
 --- !u!4 &2001767876

@@ -8,6 +8,7 @@ public class Cinematica1 : MonoBehaviour
     private void Awake()
     {
         GetComponent<Dialog>().IniciarDialogo();
+        
     }
 
 }

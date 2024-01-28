@@ -11,5 +11,9 @@ public class Tp : MonoBehaviour
         print(nombreDeEscena);
         SceneManager.LoadScene(nombreDeEscena);
     }
-    
+    private void OnMouseDown()
+    {
+        SceneManager.LoadScene(nombreDeEscena);
+    }
+
 }
