@@ -727,9 +727,9 @@ MonoBehaviour:
   Texto: {fileID: 1943098008}
   GloboTexto: {fileID: 703036937}
   LineasDialogo:
-  - "Bienvenidos a todos a la inauguraci\xF3n de nuestra nueva secci\xF3n en el museo.
+  - "Bienvenidos a todos a la inauguraci\xF3n de nuestra nueva pieza en el museo.
     Hemos decidido que se iba a enfocar en nuestro personaje famoso del pueblo: \u201CEL
-    GROC\u201D.\r\nMuchas gracias y espero que os guste.\r\n"
+    GROC\u201D. \xA1Espero que os guste!"
   - "Muy buenas alcalde, por favor, \xBFpodr\xEDa concedernos una entrevista para
     el periodico?"
   - Claro, por supuesto. Puedes preguntarme lo que quieras.
@@ -3565,7 +3565,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b219240290df370438ee63ca0545fb54, type: 2}
   m_sharedMaterial: {fileID: -8237087996061170709, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3629,7 +3629,7 @@ MonoBehaviour:
   m_margin: {x: -17.00772, y: -10.620502, z: -18.222595, w: -25.511562}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1943098009

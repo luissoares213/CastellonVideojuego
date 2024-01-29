@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a265e6b3b8af67a419db1925e23cf206, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce987ce4c6beae74792318c0a2c2484b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce987ce4c6beae74792318c0a2c2484b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a265e6b3b8af67a419db1925e23cf206, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1565,6 +1565,7 @@ MonoBehaviour:
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!61 &1402388856
 BoxCollider2D:
   m_ObjectHideFlags: 0
