@@ -1327,6 +1327,7 @@ GameObject:
   - component: {fileID: 1774994520}
   - component: {fileID: 1774994519}
   - component: {fileID: 1774994518}
+  - component: {fileID: 1774994523}
   m_Layer: 0
   m_Name: Iddle Fantasma Groc
   m_TagString: Untagged
@@ -1395,7 +1396,7 @@ Transform:
   m_GameObject: {fileID: 1774994514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.05, y: -0.45, z: 0}
+  m_LocalPosition: {x: 0.26, y: -2.82, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1444,7 +1445,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 58.594303, y: 32.334232}
+  m_Size: {x: 100, y: 50}
   m_EdgeRadius: 0
 --- !u!114 &1774994518
 MonoBehaviour:
@@ -1495,6 +1496,7 @@ MonoBehaviour:
   segundo: {fileID: 254122667}
   boton: {fileID: 254122667}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!114 &1774994521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,6 +1538,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f3c8e4d3146d842bb4cfdf07b0b1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1774994523
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774994514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdc7738ed83fed047803743abe1982e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1875772744
 GameObject:
   m_ObjectHideFlags: 0

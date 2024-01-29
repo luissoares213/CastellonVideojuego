@@ -3087,6 +3087,7 @@ GameObject:
   - component: {fileID: 1207278207}
   - component: {fileID: 1207278206}
   - component: {fileID: 1207278205}
+  - component: {fileID: 1207278210}
   m_Layer: 0
   m_Name: alcalde
   m_TagString: Untagged
@@ -3274,6 +3275,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.776799, y: 16.385462}
   m_EdgeRadius: 0
+--- !u!95 &1207278210
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207278202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04d38cf0f23a84f4db72417540eda5fc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1222737923
 GameObject:
   m_ObjectHideFlags: 0

@@ -1208,6 +1208,7 @@ GameObject:
   - component: {fileID: 580878028}
   - component: {fileID: 580878027}
   - component: {fileID: 580878029}
+  - component: {fileID: 580878030}
   m_Layer: 0
   m_Name: Anciano
   m_TagString: Untagged
@@ -1446,6 +1447,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Minijuego: MinijuegoJoel
   scene: {fileID: 11400000, guid: b2f61c6a1f2ebd646955343b545a1c04, type: 2}
+--- !u!95 &580878030
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580878019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d72dbdcfa517da4f90b6f53d73859c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &602497542
 GameObject:
   m_ObjectHideFlags: 0
