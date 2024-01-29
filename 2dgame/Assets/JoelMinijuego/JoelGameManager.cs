@@ -340,6 +340,27 @@ public class GameManager2 : MonoBehaviour {
         offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset += Vector3.back;
 
+        for (int Irow = 0; Irow < dimensions.y; Irow++) 
+        {
+           for (int Jcol = 0; Jcol < dimensions.x; Jcol++) 
+           {
+            for( int i = 0; i < texturePiece.Length; i++)
+            if (piecePivot[i] == draggingPiece & otherPositionP[Irow,Jcol] == draggingPiece)
+            {
+              print("la pieza" + piecePivot[0] + "ha sido colocada en el sitio incorrecto");
+              sitioCorrecto[i] = false;
+            }
+            if( onspotP[Irow,Jcol] == draggingPiece)
+              {
+                onspot[Irow,Jcol] = false;
+                print("la pieza" + Irow + Jcol + "ha sido colocada en el sitio incorrecto");
+                break;
+              }
+           }
+        }
+
+       
+
          int ind = -1;
 
         for(int i = 0; i< texturePiece.Length; i++) 
@@ -553,7 +574,7 @@ public class GameManager2 : MonoBehaviour {
     
     for(int ig = 0; ig < 2; ig++)
     {
-      
+
     if (Vector2.Distance(draggingPiece.localPosition, targetPosition) < (width / 2)) {
       
       
