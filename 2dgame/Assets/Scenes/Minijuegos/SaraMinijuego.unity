@@ -1704,17 +1704,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Coloca los panes en sus bandejas correspondientes y pulsa la campana para
-    entregarlos.\nIntenta conseguir m\xE1s de 15 puntos.\n\xA1BUENA SUERTE!"
+    entregarlos.\nIntenta conseguir m\xE1s de 15 puntos antes de que se acabe el
+    tiempo.\n\xA1Buena Suerte!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
-  m_sharedMaterial: {fileID: -8237087996061170709, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 58894147bd6d1db458ffa2b91bf08d25, type: 2}
+  m_sharedMaterial: {fileID: -8674836234094488093, guid: 58894147bd6d1db458ffa2b91bf08d25, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282327845
-  m_fontColor: {r: 0.14604507, g: 0.13768244, b: 0.24528301, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -84,18 +84,15 @@ public class GameManager : MonoBehaviour
         {
             // Update time.
             timeRemaining -= Time.deltaTime;
+            //añadido de Alex C
+            if (score > 19)
+            {
+                GameOver(0);
+            }
             if (timeRemaining <= 0)
             {
                 timeRemaining = 0;
-                //añadido de Alex C
-                if (score > 20)
-                {
-                    GameOver(0);
-                }
-                else
-                {
-                    GameOver(1);
-                }
+                GameOver(1);
             }
             timeText.text = $"{(int)timeRemaining / 60}:{(int)timeRemaining % 60:D2}";
             // Check if we need to start any more moles.

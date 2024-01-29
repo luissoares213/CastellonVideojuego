@@ -1356,6 +1356,7 @@ MonoBehaviour:
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!114 &580878026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,7 +1439,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580878019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae06e140d917934fb104cdf030be5c7, type: 3}
   m_Name: 

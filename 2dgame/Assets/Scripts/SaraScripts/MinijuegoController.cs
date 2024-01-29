@@ -30,14 +30,14 @@ public class MinijuegoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tiempo > 0)
+        if (tiempo > 0 && puntos < 15)
         {
             tiempo -= Time.deltaTime;
             tiempoText.text = FormatearTiempo(tiempo);
         }
         else
         {
-            tiempoText.text = "Fin del tiempo";
+            //tiempoText.text = "Fin del tiempo";
             //Adicion de Alex C
             if (puntos > 15)
             {

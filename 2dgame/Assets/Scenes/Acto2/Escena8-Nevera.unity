@@ -1203,7 +1203,6 @@ GameObject:
   - component: {fileID: 580878023}
   - component: {fileID: 580878022}
   - component: {fileID: 580878026}
-  - component: {fileID: 580878025}
   - component: {fileID: 580878024}
   - component: {fileID: 580878028}
   - component: {fileID: 580878027}
@@ -1315,7 +1314,7 @@ MonoBehaviour:
   - Bueno, al menos se que alguien hay
   - Recuerdo que el Groc tambien tenia una pala
   plyr: {fileID: 413035858}
-  accionEnd: 0
+  accionEnd: 1
   globoTexto: {fileID: 1997156426}
   controlDial: {fileID: 580878022}
   lineIndex: 0
@@ -1334,28 +1333,6 @@ MonoBehaviour:
   personajeMovible: {fileID: 413035859}
   destino: {fileID: 363203480}
   actoActivo: 0
---- !u!114 &580878025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580878019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe5ea1e977a3dd448b09bfdffeb347e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sonido: {fileID: 0}
-  so: {fileID: 0}
-  dial: {fileID: 0}
-  caraTexto: {fileID: 0}
-  volver: 
-  video: {fileID: 0}
-  primero: {fileID: 0}
-  segundo: {fileID: 0}
-  boton: {fileID: 0}
-  bc: {fileID: 0}
 --- !u!114 &580878026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,7 +1415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580878019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae06e140d917934fb104cdf030be5c7, type: 3}
   m_Name: 
