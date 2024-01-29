@@ -12,6 +12,9 @@ public class MovPersonaje : MonoBehaviour
     private bool Suelo;
     private int Contador;
 
+    private bool Saltar = false;
+
+
     public GameObject botonReiniciar;
 
     private Animator Animator;
@@ -43,6 +46,7 @@ public class MovPersonaje : MonoBehaviour
         if (botonSaltoBajo != null)
         {
             botonSaltoBajo.onClick.AddListener(BotonSaltoAbajo);
+
         }
 
     }
@@ -52,15 +56,20 @@ public class MovPersonaje : MonoBehaviour
     {
 
         //Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red);
+        if (Suelo && Animator.GetCurrentAnimatorStateInfo(0).IsName("Salto"))
+        {
+            Animator.SetBool("Saltar", false);
+        }
         if (Physics2D.Raycast(transform.position, Vector3.down, 8f))
         {
             Suelo = true;
-            Animator.SetBool("Saltar", false);
         }
+        
         else
         {
             Suelo = false;
         }
+
 
     }
     public void BotonSaltoClick()
