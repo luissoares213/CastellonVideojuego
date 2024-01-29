@@ -2109,7 +2109,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b219240290df370438ee63ca0545fb54, type: 2}
   m_sharedMaterial: {fileID: -8237087996061170709, guid: a7228a8d333641d478b4df2fb5efd723, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   m_margin: {x: 235.14182, y: 64.80931, z: 230.53711, w: 49.665718}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1137006367
@@ -2752,6 +2752,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acc7af7cc7709541a62673766d6f676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1425984902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425984900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2668168636b63694ca1ef24d2b374b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Texto: {fileID: 0}
+  GloboTexto: {fileID: 0}
+  LineasDialogo:
+  - "Me parece que as\xED seria"
+  - "Si tienes raz\xF3n. Gracias"
+  - De nada
+  - "\xA1Oh! Ya recuerdo d\xF3nde puse la pala"
+  - "\xBF\xA1Enserio!?"
+  - Si, aqui tienes
+  - Muchas gracias
+  plyr: {fileID: 0}
+  accionEnd: 5
+  globoTexto: {fileID: 0}
+  controlDial: {fileID: 0}
+  lineIndex: 0
 --- !u!1001 &1456014615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2843,7 +2870,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1425984902}
   m_SourcePrefab: {fileID: 100100000, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
 --- !u!1 &1667333881
 GameObject:

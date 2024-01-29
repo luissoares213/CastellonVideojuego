@@ -52,6 +52,7 @@ public class EndDialogos : MonoBehaviour
         }
         else if (accionEnd == 5) {
             bc.enabled = true;
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             ct.enabled = true;
         }
         else if (accionEnd == 6)
