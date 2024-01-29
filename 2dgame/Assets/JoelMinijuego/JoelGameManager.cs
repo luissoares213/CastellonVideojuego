@@ -549,36 +549,11 @@ public class GameManager2 : MonoBehaviour {
         }
 
     // Check if we're in the correct location.
+
+    
     for(int ig = 0; ig < 2; ig++)
     {
-    if(ig == 1)
-    {
-      if(draggingPiece == piecePivot[2]) //Cepillo
-    {
-      col = 3;
-      row = 6;
-      targetPosition = new((-width * dimensions.x / 2) + (width * col) + (width / 2),
-                                 (-height * dimensions.y / 2) + (height * row) + (height / 2));
-    }
-      if(draggingPiece == piecePivot[1]) //Brujula
-    {
-      col = 5;
-      row = 5;
-      targetPosition = new((-width * dimensions.x / 2) + (width * col) + (width / 2),
-                                 (-height * dimensions.y / 2) + (height * row) + (height / 2));
-      print("uep");
-    }
-    else if(draggingPiece == piecePivot[8]) //Botiquín
-    {
-      col = 4;
-      row = 1;
-      targetPosition = new((-width * dimensions.x / 2) + (width * col) + (width / 2),
-                                 (-height * dimensions.y / 2) + (height * row) + (height / 2));
-      print("eyep");
-    }
-     targetPosition = targetPosition + desplazamiento;
-
-    }
+      
     if (Vector2.Distance(draggingPiece.localPosition, targetPosition) < (width / 2)) {
       
       
