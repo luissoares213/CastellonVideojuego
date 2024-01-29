@@ -983,6 +983,8 @@ GameObject:
   - component: {fileID: 1464632746}
   - component: {fileID: 1464632748}
   - component: {fileID: 1464632749}
+  - component: {fileID: 1464632751}
+  - component: {fileID: 1464632752}
   m_Layer: 0
   m_Name: Iddle Fantasma Groc
   m_TagString: Untagged
@@ -1051,7 +1053,7 @@ Transform:
   m_GameObject: {fileID: 1464632739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.38, y: -1.02, z: 0}
+  m_LocalPosition: {x: -0.29, y: -3.33, z: 0}
   m_LocalScale: {x: 0.38023594, y: 0.3368737, z: 0.9427}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1153,7 +1155,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 14.177004, y: 3.0252342}
+  m_Offset: {x: 14.177004, y: 5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1164,7 +1166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 46.790447, y: 29.784683}
+  m_Size: {x: 90, y: 40}
   m_EdgeRadius: 0
 --- !u!114 &1464632748
 MonoBehaviour:
@@ -1204,6 +1206,42 @@ MonoBehaviour:
   boton: {fileID: 0}
   bc: {fileID: 0}
   ct: {fileID: 0}
+--- !u!111 &1464632751
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464632739}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e13a249003ad97b4db1b055aa29955e1, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &1464632752
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464632739}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdc7738ed83fed047803743abe1982e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1588174493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
