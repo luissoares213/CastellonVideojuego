@@ -831,9 +831,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 713031430}
-    - targetCorrespondingSourceObject: {fileID: 7426245152933191166, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 713031429}
   m_SourcePrefab: {fileID: 100100000, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
@@ -862,20 +859,6 @@ MonoBehaviour:
   sr: {fileID: 713031428}
   hoverColor: {r: 1, g: 0.923445, b: 0, a: 1}
   startColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &713031430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713031427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d8ecd9fd925344c83f4d12995ab1e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objetivo: {fileID: 0}
-  velocidadMovimiento: 5
 --- !u!114 &713031431 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 520391253377459931, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
@@ -2016,6 +1999,7 @@ MonoBehaviour:
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!114 &1999415837
 MonoBehaviour:
   m_ObjectHideFlags: 0
