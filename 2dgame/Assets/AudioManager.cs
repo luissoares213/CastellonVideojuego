@@ -27,12 +27,20 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         string actual = SceneManager.GetActiveScene().name;
+        //if (actual == "" || actual == "" || actual == "") {
+        //    musicSource.clip = music4;
+        //    musicSource.
+        //}
         if (actual == "MenuInicial") {
             musicSource.clip = music1;
         }
         else if (actual=="AngelMinijuego")
         {
             musicSource.clip = music4;
+        }
+        else if (actual == "JoelMinijuego")
+        {
+            musicSource.clip = music3;
         }
         else
         {
