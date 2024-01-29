@@ -119,4 +119,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/Escena9-PlazaMayor.unity
     guid: 7b4b13fe5c07d634d9104d8b4345e953
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Panaderia 1.unity
+    guid: 45778f4973d0c8645aca709427bd62ca
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena3-Ermita2 1.unity
+    guid: 07ecdb479cc23cd469714f146c3ea3df
+  - enabled: 1
+    path: Assets/Scenes/Acto1/Escena5-Nevera2.unity
+    guid: 3e7e341862ea8f94c99dde9db9f4cc56
   m_configObjects: {}
