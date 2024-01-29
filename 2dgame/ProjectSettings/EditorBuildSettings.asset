@@ -110,4 +110,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/Epilogo-Museo.unity
     guid: cdb07bb7635ddfd47a8c157019d9ab87
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena8-Parque.unity
+    guid: 971fb256a0e3941449c91d61bab73647
+  - enabled: 1
+    path: Assets/Scenes/Acto2/Escena9-Parque1.unity
+    guid: 98d540a2af83d1a4cb8ddfda3a6d3b3f
   m_configObjects: {}
