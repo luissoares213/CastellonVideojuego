@@ -406,6 +406,7 @@ MonoBehaviour:
   segundo: {fileID: 0}
   boton: {fileID: 0}
   bc: {fileID: 0}
+  ct: {fileID: 0}
 --- !u!1 &55705043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,7 +4213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2efc21ff44b18fa41a7968d6e166dabd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activar: {fileID: 0}
+  activar: {fileID: 560253181}
 --- !u!1 &1870799121
 GameObject:
   m_ObjectHideFlags: 0

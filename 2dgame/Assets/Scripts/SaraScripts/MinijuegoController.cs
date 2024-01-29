@@ -39,7 +39,7 @@ public class MinijuegoController : MonoBehaviour
         {
             //tiempoText.text = "Fin del tiempo";
             //Adicion de Alex C
-            if (puntos > 15)
+            if (puntos >= 15)
             {
                 SceneManager.LoadScene(scene.volver);
             }
