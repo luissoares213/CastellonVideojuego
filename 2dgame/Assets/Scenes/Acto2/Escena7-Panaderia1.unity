@@ -1458,10 +1458,12 @@ MonoBehaviour:
   Texto: {fileID: 313792963}
   GloboTexto: {fileID: 1065987996}
   LineasDialogo:
-  - "Hola buenas, te veo agobiada, \xBFestas bien?"
+  - "\xA1Hola buenas!... Te veo agobiada, \xBFestas bien? (Yo la verdad es que no,
+    gracias)"
   - "No del todo, me han llegado todas las entregas al mismo tiempo y el chico que
     tiene que ordenarlos est\xE1 de vacaciones y no tengo tiempo de hacerlo yo."
-  - Si necesitas ayuda yo puedo ayudarte si no es mucha molestia.
+  - "(Quiz\xE1 algo de cocina me ayude a desestresarme y alomejor me da informaci\xF3n)...
+    Si necesitas ayuda yo puedo ayudarte si no es mucha molestia. "
   - "\xBFDe verdad? Que bien, pues si me ayudas, a cambio puedes coger cualquier
     cosa de mi panader\xEDa como pago. Much\xEDsimas gracias."
   plyr: {fileID: 713031427}

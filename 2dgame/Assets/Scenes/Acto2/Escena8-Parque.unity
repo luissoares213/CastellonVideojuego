@@ -2903,14 +2903,15 @@ MonoBehaviour:
   LineasDialogo:
   - "Hola grandull\xF3n, \xBFno sabr\xE1s quien es descendiente del Groc, verdad?"
   - "Si lo s\xE9."
-  - "Y... \xBFme lo puedes decir?"
+  - "Pero ser- (C\xE1lmate, yo, por favor, esto es importante...) ... \xBFme lo puedes
+    decir?"
   - No me apetece, jeje.
-  - Venga, por favor, es importante
-  - Si juegas conmigo te lo digo
-  - "Claro. \xBFA que quieres jugar?"
-  - Al escondite
-  - De acuerdo
-  - Recuerda, tienes que pillarme solamente a mi
+  - ... Venga, por favor, es importante.
+  - "Bueeeeenooo... \xA1Si juegas conmigo te lo digo!"
+  - "(Esperemos que no mienta el ni\xF1o) Claro. \xBFA que quieres jugar?"
+  - "\xA1Al escondite!"
+  - "De acuerdo, \xA1prep\xE1rate para ser descubierto! \n(\xA1ladr\xF3n de bigotes!)"
+  - Jejeje... Recuerda, tienes que pillarme solamente a mi
   plyr: {fileID: 1425984900}
   accionEnd: 4
   globoTexto: {fileID: 94379071}

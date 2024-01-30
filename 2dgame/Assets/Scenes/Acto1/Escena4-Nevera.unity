@@ -1104,8 +1104,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1313,13 +1313,25 @@ MonoBehaviour:
   GloboTexto: {fileID: 1997156426}
   LineasDialogo:
   - "Hola, disculpe, \xBFtiene algo que me ayude a desenterrar un objeto?"
-  - "Si claro, tengo una pala, pero no recuerdo donde la dej\xE9"
-  - Vaya
-  - Recuerdo que el Groc tambien tenia una pala
-  - "\xBFY d\xF3nde la guardaba?"
-  - "Pues en su mochila, \xBFPero no recuerdo c\xF3mo hacia pra que le cupiera tanta
-    cosa en ella?"
-  - "Quizas le pueda ayudar. \xBFQu\xE9 solia llevar en esa mochila?"
+  - "\xA1Claro, jovencita, faltar\xEDa m\xE1s no ayudar a las nuevas generaciones!...
+    Tengo una pala en... ehh, d\xF3nde era... s\xE9 que estaba cerca de aqu\xED..."
+  - "Me vendr\xEDa muy bien realmente esa pala se\xF1or... \xBFTiene alg\xFAn recuerdo
+    de donde pueda haberla dejado, algo le viene a la mente? "
+  - "Ahora que lo dices... Al Groc tambi\xE9n le pasaba esto, tambien llevaba una
+    en sus aventuras, \xA1y no te imaginas lo mucho que llegaba a perderla por grande
+    que fuese!"
+  - "(Puede que si sigo forzando esta conversaci\xF3n llegue a refrescarle la mente
+    si le sigo el ritmo)... D\xEDgame entonces se\xF1or... \xBFQu\xE9 hac\xEDa el
+    groc para no perderla, cu\xE1l era su m\xE9todo?"
+  - "Ten\xEDa un m\xE9todo s\xED, siempre llevaba las mismas cosas pero le bastaban
+    para defenderse de sus enemigos, en una mochila tan grande que 3 hombres podr\xEDan
+    sufrir con ella cargando."
+  - "Y con el aguante que ten\xEDa como cuentan, debe de ser que era un personaje
+    extremadamente resistente... Pero tantas cosas en una mochila es dif\xEDcil de
+    seguir el rastro."
+  - "... pero... \xBFC\xF3mo las guardaba?... no me est\xE1 viniendo a la mente..."
+  - "Quizas le pueda ayudar. \xBFQu\xE9 solia llevar en esa mochila y que sol\xEDa
+    hacer para guardarlas?"
   plyr: {fileID: 413035858}
   accionEnd: 4
   globoTexto: {fileID: 1997156426}

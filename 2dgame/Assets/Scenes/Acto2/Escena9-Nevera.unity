@@ -1311,10 +1311,11 @@ MonoBehaviour:
   Texto: {fileID: 448459386}
   GloboTexto: {fileID: 1997156426}
   LineasDialogo:
-  - Ya se quien es el descendiente del Groc
-  - "Sab\xEDa que habia alguien, \xBFqui\xE9n es?"
-  - "Es la abuela de Nicol\xE1s"
-  - Cierto, ahora recuerdo
+  - "Sabes, se\xF1or, al final ten\xEDas raz\xF3n."
+  - "Ah s\xED... \xBFsobre qu\xE9 exactamente jovencita?"
+  - "... Sobre c\xF3mo tratar bien a las nuevas generaciones, \xA1un abrazo!"
+  - "Decirle esto a un hombre con toda la vida por detr\xE1s me pone sentimental...
+    \xA1Gracias a ti por escucharme, periodista, suerte con su art\xEDculo!"
   plyr: {fileID: 413035858}
   accionEnd: 0
   globoTexto: {fileID: 1997156426}

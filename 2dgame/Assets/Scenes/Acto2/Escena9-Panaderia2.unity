@@ -1411,8 +1411,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1880,16 +1880,18 @@ MonoBehaviour:
   - "Perdona, \xBFes usted la abuela de Nicolas?"
   - "Si, \xBFporque preguntas? Ya ha hecho algo seguro, cuando llegue a casa y lo
     vea le castigar\xE9."
-  - "No tranquila, no ha hecho nada. Me ha dicho que t\xFA eras descendiente del
-    groc, por eso quer\xEDa saber quien eras."
-  - "Si, efectivamente. Que pasa, piensas que por ser familia seguro he sido yo quien
-    ha robado el art\xEDculo del museo, no?"
+  - "No tranquila... no ha hecho nada. Me ha dicho que t\xFA eras descendiente del
+    Groc, por eso quer\xEDa saber quien eras."
+  - "Hmpf Si, efectivamente. \xBFQue pasa, piensas que por ser familia seguro he
+    sido yo quien ha robado el art\xEDculo del museo, no?"
   - "No, para nada. Solo quer\xEDa preguntarte si de generaci\xF3n en generaci\xF3n
     os hab\xE9is ido pasando un cuchillo perteneciente a el Groc."
-  - "Si, nos lo hemos ido pasando como reliquia, pero ese cuchillo ya no vale. Est\xE1
-    viejo y anticuado. Pero en su momento, era fabuloso. El Groc consigui\xF3 hacerse
-    con ese cuchillo gracias a una gran escapada, donde logr\xF3 evadir a varios
-    guardias que iban a por \xE9l."
+  - "\xBFC\xF3mo has-?...Si, nos lo hemos ido pasando como reliquia, pero ese cuchillo
+    ya no vale. Est\xE1 viejo y anticuado. Pero en su momento, era fabuloso. "
+  - Me lo puedo imaginar ciertamente.
+  - "El Groc consigui\xF3 hacerse con ese cuchillo gracias a una gran escapada, donde
+    logr\xF3 evadir a varios guardias que iban a por \xE9l... si realmente sabes
+    tanto de \xE9l, seguro que sabes c\xF3mo pudo escapar..."
   plyr: {fileID: 713031427}
   accionEnd: 4
   globoTexto: {fileID: 114856821}

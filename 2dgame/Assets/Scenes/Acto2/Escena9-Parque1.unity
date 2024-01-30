@@ -411,9 +411,9 @@ MonoBehaviour:
   Texto: {fileID: 1137006366}
   GloboTexto: {fileID: 94379071}
   LineasDialogo:
-  - "Donde dices que est\xE1 tu abuela"
-  - "Lo m\xE1s probable es que est\xE9 en la panader\xEDa ahora mismo"
-  - Gracias
+  - "\xBFDonde dices que est\xE1 tu abuela?"
+  - "Lo m\xE1s probable es que est\xE9 en la panader\xEDa ahora mismo."
+  - "\xA1Muchas gracias, Nico!"
   plyr: {fileID: 2009450583}
   accionEnd: 0
   globoTexto: {fileID: 94379071}
@@ -2414,8 +2414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4271,15 +4271,16 @@ MonoBehaviour:
   Texto: {fileID: 1137006366}
   GloboTexto: {fileID: 94379071}
   LineasDialogo:
-  - Ya hemos jugado bastante. Me dices quien es por favor
-  - "El familiar al que buscas es mi abuela. Seguramente est\xE1 en la panader\xEDa
-    ahora mismo, seguramente la encuentras all\xED."
-  - Gracias
+  - "Ya hemos jugado bastante. \xBFMe dices quien es por favor?"
+  - "... El familiar al que buscas es a mi abuela. Seguramente est\xE1 en la panader\xEDa
+    ahora mismo,  la encontrar\xE1s all\xED."
+  - "\xA1Gracias!"
   - "Mi abuela siempre cuenta historias sobre el groc, ya que se siente orgullosa
     al tener un familiar tan famoso. Aunque la mayor\xEDa de veces se pone un poco
     pesada, jejeje"
-  - De acuerdo
-  - "Por cierto me llamo Nicol\xE1s"
+  - "Por supuesto peque\xF1o... \xBFC\xF3mo te llamas? As\xED me quedo con tu nombre,
+    que eres muy buen chico. (y puedo preguntar a la abuela en nombre de alguien)."
+  - "Me llaman Nicol\xE1s, \xA1pero mis amigos me llaman Nico!"
   plyr: {fileID: 2009450583}
   accionEnd: 5
   globoTexto: {fileID: 94379071}

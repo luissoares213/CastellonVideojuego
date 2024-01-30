@@ -957,8 +957,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1311,8 +1311,14 @@ MonoBehaviour:
   GloboTexto: {fileID: 1997156426}
   LineasDialogo:
   - "Hola, disculpe, \xBFsabe de alguien que sea descendiente del Groc?"
-  - Creo que por el pueblo hay alguien que lo es, pero recuerdo quien era
-  - Bueno, al menos se que alguien hay.
+  - "Ah, si el descendiente... \xBFRealmente es una leyenda? Le puedo asegurar, joven
+    que, aunque no sepa quien es... Hay alguien en este pueblo que sabe demasiado..."
+  - "\xBFQu\xE9 quiere decir?"
+  - "Leyendas, relatos no escritos que corren de boca a boca... Nadie se puede imaginar
+    aventuras tan detalladas y con tanta realidad, \xA1Alguien en este pueblo debe
+    de ser descendiente!"
+  - "(\xA1Se ha puesto intenso el hombre, no hay duda!) Conf\xEDo en usted se\xF1or,
+    un placer como siempre."
   plyr: {fileID: 413035858}
   accionEnd: 0
   globoTexto: {fileID: 1997156426}

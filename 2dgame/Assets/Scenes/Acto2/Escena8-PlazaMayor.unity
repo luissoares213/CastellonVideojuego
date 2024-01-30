@@ -1133,8 +1133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2320,7 +2320,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Periodista
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3135926536834545870, guid: 06cfa89bd206a1c4c82451bce6883d40, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3088,6 +3089,7 @@ GameObject:
   - component: {fileID: 1207278206}
   - component: {fileID: 1207278205}
   - component: {fileID: 1207278210}
+  - component: {fileID: 1207278211}
   m_Layer: 0
   m_Name: alcalde
   m_TagString: Untagged
@@ -3179,10 +3181,15 @@ MonoBehaviour:
   GloboTexto: {fileID: 146194887}
   LineasDialogo:
   - Hola alcalde, necesitaria poder acceder a los registros del pueblo
-  - "\xBFPuedo saber el motivo?"
-  - Necesito saber que personas son descendientes del Groc
-  - Me temo que no va a poder ser. Esos documentos son privados
-  - "(Tendr\xE9 que seguir explorando m\xE1s el pueblo y preguntar a la gente)"
+  - "...\xBFPuedo saber el motivo?"
+  - Necesito saber que personas son descendientes del Groc.
+  - "...Se\xF1orita, esto es el colmo, \xA1ya he oido demasiadas quejas por el pueblo
+    de una se\xF1ora que est\xE1 buscando sin parar algo que no le incumbe!"
+  - Pero alcalde-
+  - "\xA1Nada de peros! Le doy un d\xEDa para que siga con esta rid\xEDcula investigaci\xF3n,
+    pero como ma\xF1ana le pegue el ojo encima, tendr\xE9 que tomar medidas legales."
+  - "-... Si, se\xF1or alcalde. (\xA1Maldita sea, ahora juego a contrarreloj, tengo
+    que encontrar al descendiente cuanto antes!)"
   plyr: {fileID: 1091148163}
   accionEnd: 0
   globoTexto: {fileID: 146194887}
@@ -3296,6 +3303,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1207278211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207278202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7220b683e4b364c4391e90605e9e2a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 1207278203}
+  hoverColor: {r: 1, g: 0.923445, b: 0, a: 1}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1222737923
 GameObject:
   m_ObjectHideFlags: 0

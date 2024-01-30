@@ -1219,8 +1219,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1646,14 +1646,18 @@ MonoBehaviour:
   Texto: {fileID: 886788394}
   GloboTexto: {fileID: 918279648}
   LineasDialogo:
-  - "Pero si tan interesada est\xE1s en ese cuchillo, \xBFpor qu\xE9 quieres saber
-    quien lo tiene?"
-  - "Lo necesito porque es la \xFAltima pieza para resolver el misterio, consiguiendo
-    el cuchillo, estar\xE1 casi resuelto."
-  - "Entonces que te lo de mi hija, yo se lo pas\xE9 a ella. Ahora cuando salga del
-    almac\xE9n que te lo d\xE9."
-  - Gracias
-  - "Aqu\xED tienes"
+  - "...\xA1Hmph-!... Panadera, sal, ya no hace falta que te escondas."
+  - "...\xBFLa panadera se estaba escondiendo? "
+  - "El pueblo es un pa\xF1uelo jovencita y... si hay alguien que puede encapsular
+    la idea del groc en su cabeza como si le hubiera visto, esa eres tu."
+  - "...\xBFQu\xE9 insinua, se\xF1ora?"
+  - "El fantasma, lo he visto, la gente se hace la loca, pero es REAL, y si has venido
+    a por algo tan espec\xEDfico como este cuchillo es porque \xE9l te lo habr\xE1
+    pedido, \xBFcierto? "
+  - "...Es la \xFAltima pieza del puzle, se\xF1ora."
+  - "No puedo con esta maldici\xF3n. Panadera, d\xE9le el cuchillo a la muchacha
+    y usted, prom\xE9teme que nos liberar\xE1 del fantasma del groc."
+  - "Lo prometo, \xA1buenas tardes y que disfruten del d\xEDa! (Yo no lo har\xE9...)"
   plyr: {fileID: 1738666903}
   accionEnd: 2
   globoTexto: {fileID: 918279648}

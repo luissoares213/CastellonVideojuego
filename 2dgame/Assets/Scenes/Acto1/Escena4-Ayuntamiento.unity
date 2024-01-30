@@ -2838,10 +2838,12 @@ MonoBehaviour:
   GloboTexto: {fileID: 55705043}
   LineasDialogo:
   - "Hola alcalde, \xBFtiene algo que me ayude a desenterrar algo?"
-  - Hmmm... Me temo que no.
+  - Hmmm... Lo siento, estoy demasiado ocupado para ayudarte.
   - Vaya, gracias igualmente.
-  - Siento no ser de ayuda.
-  - Vaya.
+  - "...Le aviso, periodista, esta investigaci\xF3n no es para usted, lo mejor que
+    puede hacer es abandonar el pueblo y olvidarse del asunto."
+  - "Vaya... \xA1que inspirador, alcalde!"
+  - "Era la intenci\xF3n."
   plyr: {fileID: 1668010171}
   accionEnd: 0
   globoTexto: {fileID: 55705043}

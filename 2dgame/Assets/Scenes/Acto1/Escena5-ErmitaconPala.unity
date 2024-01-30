@@ -2297,8 +2297,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4052,8 +4052,11 @@ MonoBehaviour:
   GloboTexto: {fileID: 850541989}
   LineasDialogo:
   - "\xBFSabe donde podria estar la caja?"
-  - Debe haberla enterrado cerca de la escultura
-  - Gracias
+  - "No estoy seguro, pero... Me acuerdo que el monje antiguo siempre le gustaba
+    rezar en ese punto exacto del terreno y nunca supe realmente porqu\xE9... quiz\xE1
+    est\xE9 enterrada ah\xED."
+  - "\xA1Voy a probar suerte, muchas gracias!"
+  - "No hay de qu\xE9, amiga forastera."
   plyr: {fileID: 1737650515}
   accionEnd: 3
   globoTexto: {fileID: 850541989}

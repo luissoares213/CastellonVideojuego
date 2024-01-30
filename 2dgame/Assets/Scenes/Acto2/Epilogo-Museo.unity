@@ -1512,15 +1512,19 @@ MonoBehaviour:
   Texto: {fileID: 1943913763}
   GloboTexto: {fileID: 1466406617}
   LineasDialogo:
-  - "Aqu\xED tienes"
+  - "Aqu\xED tienes el cuchillo..."
   - "Muchas gracias por devolver estas cosas a su due\xF1o. Ahora es momento de desvelar
     qui\xE9n fue el ladr\xF3n. "
   - "Cierto, \xBFqui\xE9n es?"
-  - "Fui yo, lo hice para llamar tu atenci\xF3n y me ayudaras a encontrar los objetos
-    perdidos que faltaban, ahora gracias a ti, podr\xE9 descansar en paz."
-  - "No me esperaba que hubieras sido t\xFA. Pero si gracias a esto puedes descansar
-    en paz, me alegro. Tengo que decirle al alcalde que el misterio est\xE1 resuelto
-    y los objetos est\xE1n en su sitio."
+  - "Fui YO, lo hice para llamar tu atenci\xF3n, bueno, la atenci\xF3n del pueblo
+    como siempre, para que me ayudaran a encontrar los objetos perdidos que faltaban,
+    ahora gracias a ti, podr\xE9 descansar en paz."
+  - "No me esperaba que hubieras sido t\xFA. Pero si gracias a esto puedes acabar
+    tu tormento, me alegro. Tengo que decirle al alcalde que el misterio est\xE1
+    resuelto y los objetos est\xE1n en su sitio."
+  - "...Es una se\xF1ora muy valiente, d\xE9le recuerdos a mi descendiente, mi l\xEDnea
+    se merece una vida que yo no pude  tomar."
+  - "Le dar\xE9 recuerdos, adios y hasta nunca Groc, noble alma,  \xA1Bigote perdido!"
   plyr: {fileID: 1263940259}
   accionEnd: 3
   globoTexto: {fileID: 1466406617}

@@ -928,7 +928,8 @@ MonoBehaviour:
   Texto: {fileID: 1941535182}
   GloboTexto: {fileID: 645042871}
   LineasDialogo:
-  - "Aqu\xED tienes tu reloj"
+  - "...Perd\xF3n no me acostumbro a estar hablando con fantasmas, supongo que estar\xE9
+    un poco loca... En fin, aqu\xED tienes tu reloj"
   - "Has hecho un muy buen trabajo recuperando mi reloj, solo te pedir\xE9 un objeto
     m\xE1s y te dir\xE9 el responsable del robo."
   - "Perfecto. El siguiente objeto que debo encontrar \xBFcu\xE1l es?"

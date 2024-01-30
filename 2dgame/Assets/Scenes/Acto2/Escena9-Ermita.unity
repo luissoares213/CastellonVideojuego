@@ -4585,9 +4585,10 @@ MonoBehaviour:
   Texto: {fileID: 2120871853}
   GloboTexto: {fileID: 55705043}
   LineasDialogo:
-  - Ya se quien es descendiente del Groc
-  - Mis felicitaciones
-  - Gracias
+  - Gracias por todo, monje, vengo a despedirme.
+  - "Entiendo entonces que ha movido ficha el alcalde... Ha sido un placer. \xA1Que
+    Dios siga contigo por cualquier camino que recorras!"
+  - "\xA1Gracias! (Lo voy a necesitar...)"
   plyr: {fileID: 1668010171}
   accionEnd: 0
   globoTexto: {fileID: 55705043}

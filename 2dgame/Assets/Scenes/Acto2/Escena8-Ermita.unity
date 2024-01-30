@@ -4586,8 +4586,9 @@ MonoBehaviour:
   GloboTexto: {fileID: 55705043}
   LineasDialogo:
   - "\xBFEs usted descendiente del Groc o sabe de alguien que lo sea?"
-  - Me temo que la respuesta a ambas preguntas es no
-  - "Seguir\xE9 buscndo entonces."
+  - ... Me temo que la respuesta a ambas preguntas es no, amiga forastera... su curiosidad
+    puede generar inquietud si le puedo aconsejar.
+  - "(No tengo tiempo para preocuparme) Seguir\xE9 buscando entonces."
   plyr: {fileID: 1668010171}
   accionEnd: 0
   globoTexto: {fileID: 55705043}

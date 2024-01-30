@@ -1937,8 +1937,9 @@ MonoBehaviour:
   Texto: {fileID: 313792963}
   GloboTexto: {fileID: 1065987996}
   LineasDialogo:
-  - "Ya est\xE1 todo"
-  - Muchas gracias
+  - "Ya est\xE1 todo, uf... \xA1Realmente era trabajo!"
+  - "De verdad \xA1Much\xEDsimas gracias, venga a tomar en esta panader\xEDa lo que
+    quiera, se lo ha ganado, moza!... "
   plyr: {fileID: 713031427}
   accionEnd: 0
   globoTexto: {fileID: 1065987996}
