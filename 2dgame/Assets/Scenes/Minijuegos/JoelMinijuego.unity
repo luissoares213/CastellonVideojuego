@@ -134,13 +134,13 @@ GameObject:
   - component: {fileID: 135372463}
   - component: {fileID: 135372466}
   - component: {fileID: 135372465}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Reglas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &135372463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135372462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 75, y: 125}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -650, y: 800}
+  m_SizeDelta: {x: 600, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135372465
 MonoBehaviour:
@@ -181,8 +181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c5a1768733068e24e840375912dc52f3, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 186a3f5db8131fd498fc2fc61b305ca4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 1494455421}
   - component: {fileID: 1494455423}
   - component: {fileID: 1494455422}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reset
+  m_text: "Groc guardaba objetos en su mochila de manera eficiente \npero extra\xF1a:\n-La
+    pala siempre la guardaba en la segunda posicion \nposible contando desde la izquierda\n-El
+    botiquin es muy importante, Groc lo guardaba \narriba del todo para tenerlo a
+    mano.\n-Ya que su cepillo era muy peque\xF1o, para no perderlo\ngroc guardaba
+    su cepillo a la izquierda de su br\xFAjula.\n\n\xBFPodr\xE1s ordenar esta mochila
+    como lo hac\xEDa el groc sin\nque ninguna se superponga ni que salga del tablero?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 58894147bd6d1db458ffa2b91bf08d25, type: 2}
   m_sharedMaterial: {fileID: -8674836234094488093, guid: 58894147bd6d1db458ffa2b91bf08d25, type: 2}
@@ -1243,8 +1248,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0

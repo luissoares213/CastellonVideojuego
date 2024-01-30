@@ -269,11 +269,11 @@ public class GameManager2 : MonoBehaviour {
     {
       if (i == 0)
       {
-        piecePivot[i].position = new Vector3(-6, 0, -1);
+        piecePivot[i].position = new Vector3(5f, 0, -1);
       }
       else if (i == 1)
       {
-        piecePivot[i].position = new Vector3(-7.5f, 3.5f, -1);
+        piecePivot[i].position = new Vector3(-7.5f, -3.75f, -1);
       }
       else if (i == 3)
       {
@@ -281,23 +281,23 @@ public class GameManager2 : MonoBehaviour {
       }
       else if (i == 4)
       {
-        piecePivot[i].position = new Vector3(4f, 1, -1);
+        piecePivot[i].position = new Vector3(-6f, -1.5f, -1);
       }
        else if (i == 5)
       {
-        piecePivot[i].position = new Vector3(7f, 1.5f, -1);
+        piecePivot[i].position = new Vector3(7f, -0.5f, -1);
       }
        else if (i == 7)
       {
-        piecePivot[i].position = new Vector3(5.5f, 0, -1);
+        piecePivot[i].position = new Vector3(7.25f, -3.5f, -1);
       }
        else if (i == 8)
       {
-        piecePivot[i].position = new Vector3(6f, -3.5f, -1);
+        piecePivot[i].position = new Vector3(0f, 4f, -1);
       }
       else
       {
-        piecePivot[i].position = new Vector3(-7.5f + 2 *i, 3.5f, -1);
+        piecePivot[i].position = new Vector3(-8f + 2 *i, -4f, -1);
       }
       
     }
